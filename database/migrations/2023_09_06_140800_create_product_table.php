@@ -19,6 +19,7 @@ class CreateProductTable extends Migration
             $table->string('description')->nullable();
             $table->integer('category_id');
             $table->string('supplier_id');
+            $table->string('thumbnail');
             $table->float('price_new')->nullable();
             $table->float('price_old');
             $table->integer('quantity');

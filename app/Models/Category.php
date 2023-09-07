@@ -10,7 +10,7 @@ class Category extends Model
 {
     use HasFactory,HasApiTokens;
 
-    protected $table = "categories";
+    protected $table = "category";
 
     protected $fillable = [
         'name',
