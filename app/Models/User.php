@@ -12,7 +12,10 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
-    public const ADMIN = 2;
+    public const ADMIN = ROLE_ADMIN;
+    public const USER = ROLE_USER;
+    public const STAFF = ROLE_STAFF;
+
 
     protected $table = 'users';
     /**
