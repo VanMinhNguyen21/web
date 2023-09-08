@@ -131,6 +131,7 @@ class ProductController extends Controller
         $data = $request->all();
         $response = Product::with('category', 'shape', 'material', 'imageProduct')->findOrFail($id);
         // $responseResource =  new ProductResource($response);
+        $imagePath = "";
         if ($request->hasFile('thumbnail')) {
             $pathThumbnail = $request->file('thumbnail')->store('public/product');
             $array = explode('/', $pathThumbnail);
@@ -143,7 +144,7 @@ class ProductController extends Controller
             'description' => $request->description,
             'category_id' => $request->category_id,
             'supplier_id' => $request->supplier_id,
-            'thumbnail' => ($imagePath) ? $imagePath : $response->thumbnail,
+            'thumbnail' => !empty($imagePath) ? $imagePath : $response->thumbnail,
             'price_new' => $request->price_new,
             'price_old' => $request->price_old,
             'quantity' => $request->quantity,
@@ -196,5 +197,30 @@ class ProductController extends Controller
         ];
 
         ProductImage::create($dataImageProduct);
+    }
+
+    public function updateStatusProduct(Request $request){
+        $product = Product::findOrfail($request->product_id);
+        switch($request->status) {
+            case(STATUS_ACTIVE):
+                $product->update([
+                    'status' => STATUS_ACTIVE
+                ]); 
+                break;
+                $msg = 'Update status product successfully!';
+            case(STATUS_LOCK):
+                
+                $product->update([
+                    'status' => STATUS_LOCK
+                ]); 
+                $msg = 'Update status product successfully!';
+                break;
+
+            default:
+                $msg = 'Something went wrong.';   
+        }
+        return response()->json([
+            'message' => $msg
+        ]);
     }
 }
