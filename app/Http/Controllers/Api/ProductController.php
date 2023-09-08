@@ -36,7 +36,7 @@ class ProductController extends Controller
             ->when(!empty($arrange_price), function ($q) use ($min_price, $max_price) {
                 return $q->whereBetween('price_new', [$min_price, $max_price]);
             })
-            ->with('category', 'material', 'shape', 'imageProduct')->get();
+            ->with('category', 'material', 'shape', 'imageProduct')->where('status',STATUS_ACTIVE)->get();
 
         return response()->json([
             'data' => $response,
