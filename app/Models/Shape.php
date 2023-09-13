@@ -15,4 +15,8 @@ class Shape extends Model
         'name',
         'description'
     ];
+
+    public function product() {
+        return $this->hasMany(Product::class,'category_id', 'id');
+    }
 }
