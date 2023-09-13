@@ -16,6 +16,11 @@ class Supplier extends Model
         'description',
         'email',
         'telephone',
-        'address'
+        'address',
+        'deleted_at'
     ];
+
+    public function product() {
+        return $this->hasMany(Product::class,'category_id', 'id');
+    }
 }

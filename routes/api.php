@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\SupplierController;
 use App\Http\Middleware\CheckRoleUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -27,4 +28,6 @@ Route::get('/product',[ProductController::class,'index']);
 Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function () {
     Route::apiResource('categories',CategoryController::class);
     Route::apiResource('products',ProductController::class);
+    Route::post('/change_status_product',[ProductController::class,'updateStatusProduct']);
+    Route::apiResource('/suppliers',SupplierController::class);
 });
