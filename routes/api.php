@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\CartController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\ProductController;
@@ -30,4 +31,5 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::apiResource('products',ProductController::class);
     Route::post('/change_status_product',[ProductController::class,'updateStatusProduct']);
     Route::apiResource('/suppliers',SupplierController::class);
+    Route::apiResource('/cart',CartController::class);
 });

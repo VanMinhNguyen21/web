@@ -207,8 +207,8 @@ class ProductController extends Controller
                 $product->update([
                     'status' => STATUS_ACTIVE
                 ]); 
-                break;
                 $msg = 'Update status product successfully!';
+                break;
             case(STATUS_LOCK):
                 
                 $product->update([
