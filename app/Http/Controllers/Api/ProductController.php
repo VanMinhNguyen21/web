@@ -21,18 +21,21 @@ class ProductController extends Controller
     public function index(Request $request)
     {
         //
-        $shape_id = $request->shape_id;
-        $material_id = $request->material_id;
+        $shape = $request->shape_id;
+
+        $material = $request->material_id;
         $min_price = $request->min_price;
         $max_price = $request->max_price;
 
         $product = Product::query();
 
-        $response = $product->when(!empty($shape_id), function ($q) use ($shape_id) {
-            return $q->where('shape_id', $shape_id);
-        })
-            ->when(!empty($material_id), function ($q) use ($material_id) {
-                return $q->where('shape_id', $material_id);
+        $response = $product->when(!empty($shape), function ($q) use ($shape) {
+                $shape_id = explode(',', $shape);
+                return $q->whereIn('shape_id', $shape_id);
+            })
+            ->when(!empty($material), function ($q) use ($material) {
+                $material_id = explode(',', $material);
+                return $q->whereIn('shape_id', $material_id);
             })
             ->when(!empty($arrange_price), function ($q) use ($min_price, $max_price) {
                 return $q->whereBetween('price_new', [$min_price, $max_price]);
