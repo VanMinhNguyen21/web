@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\SupplierController;
+use App\Http\Controllers\Api\UserController;
 use App\Http\Middleware\CheckRoleUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,7 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::apiResource('/orders', OrderController::class);
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('admin.change_status_order');
     // Route::get('/order',[OrderController::class,'getOrderByStatus']);
+    Route::apiResource('/users',UserController::class);
 
 });
 Route::middleware('auth:sanctum')->group(function(){
