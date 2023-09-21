@@ -96,7 +96,7 @@ class UserController extends Controller
 
         $validator = Validator::make($request->all(), [
             'fullname' => 'required|string',
-            'email' => ['required','email',Rule::unique('supplier','email')->ignore($user->id)],
+            'email' => ['required','email',Rule::unique('users','email')->ignore($user->id)],
             'role' => 'required',
         ], [
             'fullname.required' => 'The name field is required.',
@@ -107,6 +107,22 @@ class UserController extends Controller
         ]);
         if ($validator->fails()) {
             return response()->json($validator->errors(), 422);
+        }
+
+        try {
+            //code...
+            $user->update( $request->all());
+
+            return response()->json([
+                'status' => HttpResponse::HTTP_OK,
+                'message' => 'Update User successfull',
+            ]);
+        } catch (\Exception $error) {
+            //throw $th;
+            return response()->json([
+                'status' =>HttpResponse::HTTP_BAD_REQUEST,
+                'message' => $error
+            ]);
         }
     }
 
@@ -119,5 +135,38 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+        try{
+            $user = User::findOrFail($id);
+            $user->delete();
+    
+            return response()->json([
+                'status' => HttpResponse::HTTP_OK,
+                'message' => 'Delete User Successfull',
+            ],HttpResponse::HTTP_OK);
+        } catch(\Exception $error) {
+            return response()->json([
+                'status' => HttpResponse::HTTP_BAD_REQUEST,
+                'message' => 'Delete User Successfull',
+                'error' => $error,
+            ],HttpResponse::HTTP_BAD_REQUEST);
+        }
+    }
+
+    public function getProfile($id) {
+        try {
+            
+            $user = User::findOrFail($id);
+
+            return response()->json([
+                'status' => HttpResponse::HTTP_OK,
+                'data' => $user,
+            ],HttpResponse::HTTP_OK);
+
+        } catch (\Exception $error) {
+            return response()->json([
+                'status' => HttpResponse::HTTP_BAD_REQUEST,
+                'error' => $error
+            ],HttpResponse::HTTP_BAD_REQUEST);
+        }
     }
 }

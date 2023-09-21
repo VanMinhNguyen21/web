@@ -43,5 +43,6 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
+    Route::get('/profile/{id}',[UserController::class,'getProfile']);
 });
 
