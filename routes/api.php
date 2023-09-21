@@ -8,6 +8,7 @@ use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\SupplierController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\XaphuongController;
 use App\Http\Middleware\CheckRoleUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -42,8 +43,12 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::get('/total_product',[AnalysController::class,'totalProduct']);
 
 });
+Route::get('/product',[ProductController::class,'index']);
+Route::apiResource('/tinh',XaphuongController::class);
+Route::post('/quan',[XaphuongController::class,'getQuanHuyen']);
+Route::post('/xa',[XaphuongController::class,'getXaPhuong']);
+
 Route::middleware('auth:sanctum')->group(function(){
-    Route::get('/product',[ProductController::class,'index']);
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
