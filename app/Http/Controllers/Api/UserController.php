@@ -27,8 +27,7 @@ class UserController extends Controller
         return response()->json([
             'status' => HttpResponse::HTTP_OK,
             'data' => $users
-        ],HttpResponse::HTTP_OK);
-
+        ], HttpResponse::HTTP_OK);
     }
 
     /**
@@ -42,25 +41,24 @@ class UserController extends Controller
         //
         try {
             //code..
-            
-           User::create([
-            'role' =>$request->role,
-            'password' => Hash::make($request->password),
-            'fullname' => $request->fullname,
-            'email' => $request->email,
-            'avatar' => $request->avatar ?? "",
-           ]);
+
+            User::create([
+                'role' => $request->role,
+                'password' => Hash::make($request->password),
+                'fullname' => $request->fullname,
+                'email' => $request->email,
+                'avatar' => $request->avatar ?? "",
+            ]);
             return response()->json([
                 'status' => HttpResponse::HTTP_OK,
                 'message' => 'Tạo tài khoản thành công',
-            ],HttpResponse::HTTP_OK);
-
+            ], HttpResponse::HTTP_OK);
         } catch (\Exception $error) {
             return response()->json([
                 'status' => HttpResponse::HTTP_BAD_REQUEST,
                 'message' => 'Tạo tài khoản thất bại',
                 'error' => $error,
-            ],HttpResponse::HTTP_BAD_REQUEST);
+            ], HttpResponse::HTTP_BAD_REQUEST);
         }
     }
 
@@ -79,7 +77,7 @@ class UserController extends Controller
         return response()->json([
             'status' => HttpResponse::HTTP_OK,
             'data' => $userResource,
-        ],HttpResponse::HTTP_OK);
+        ], HttpResponse::HTTP_OK);
     }
 
     /**
@@ -96,7 +94,7 @@ class UserController extends Controller
 
         $validator = Validator::make($request->all(), [
             'fullname' => 'required|string',
-            'email' => ['required','email',Rule::unique('users','email')->ignore($user->id)],
+            'email' => ['required', 'email', Rule::unique('users', 'email')->ignore($user->id)],
             'role' => 'required',
         ], [
             'fullname.required' => 'The name field is required.',
@@ -111,7 +109,7 @@ class UserController extends Controller
 
         try {
             //code...
-            $user->update( $request->all());
+            $user->update($request->all());
 
             return response()->json([
                 'status' => HttpResponse::HTTP_OK,
@@ -120,7 +118,7 @@ class UserController extends Controller
         } catch (\Exception $error) {
             //throw $th;
             return response()->json([
-                'status' =>HttpResponse::HTTP_BAD_REQUEST,
+                'status' => HttpResponse::HTTP_BAD_REQUEST,
                 'message' => $error
             ]);
         }
@@ -135,38 +133,60 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
-        try{
+        try {
             $user = User::findOrFail($id);
             $user->delete();
-    
+
             return response()->json([
                 'status' => HttpResponse::HTTP_OK,
                 'message' => 'Delete User Successfull',
-            ],HttpResponse::HTTP_OK);
-        } catch(\Exception $error) {
+            ], HttpResponse::HTTP_OK);
+        } catch (\Exception $error) {
             return response()->json([
                 'status' => HttpResponse::HTTP_BAD_REQUEST,
                 'message' => 'Delete User Successfull',
                 'error' => $error,
-            ],HttpResponse::HTTP_BAD_REQUEST);
+            ], HttpResponse::HTTP_BAD_REQUEST);
         }
     }
 
-    public function getProfile($id) {
+    public function getProfile($id)
+    {
         try {
-            
+
             $user = User::findOrFail($id);
 
             return response()->json([
                 'status' => HttpResponse::HTTP_OK,
                 'data' => $user,
-            ],HttpResponse::HTTP_OK);
-
+            ], HttpResponse::HTTP_OK);
         } catch (\Exception $error) {
             return response()->json([
                 'status' => HttpResponse::HTTP_BAD_REQUEST,
                 'error' => $error
-            ],HttpResponse::HTTP_BAD_REQUEST);
+            ], HttpResponse::HTTP_BAD_REQUEST);
+        }
+    }
+
+    public function changePassword(Request $request)
+    {
+        $user = User::findOrFail(auth()->user()->id);
+        try {
+            $password = Hash::make($request->password);
+
+            $user->update([
+                'password' => $password,
+            ]);
+
+            return response()->json([
+                'status' => HttpResponse::HTTP_OK,
+                'message' => 'Update password successfull',
+            ], HttpResponse::HTTP_OK);
+        } catch (\Exception $error) {
+            return response()->json([
+                'status' => HttpResponse::HTTP_BAD_REQUEST,
+                'error' => $error,
+            ], HttpResponse::HTTP_BAD_REQUEST);
         }
     }
 }

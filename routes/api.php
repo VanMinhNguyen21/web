@@ -28,6 +28,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::post('/login',[LoginController::class,'login']);
+Route::post('/register',[LoginController::class,'register']);
 
 Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function () {
     Route::apiResource('categories',CategoryController::class);
@@ -41,6 +42,7 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::apiResource('/analys',AnalysController::class);
     Route::get('/total_user',[AnalysController::class,'totalUser']);
     Route::get('/total_product',[AnalysController::class,'totalProduct']);
+    Route::post('/change_password',[UserController::class,'changePassword']);
 
 });
 Route::get('/product',[ProductController::class,'index']);
@@ -53,5 +55,6 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
     Route::get('/profile/{id}',[UserController::class,'getProfile']);
+    Route::post('/change_password',[UserController::class,'changePassword']);
 });
 
