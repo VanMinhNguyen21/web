@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AnalysController;
 use App\Http\Controllers\Api\CartController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\LoginController;
@@ -36,6 +37,9 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('admin.change_status_order');
     // Route::get('/order',[OrderController::class,'getOrderByStatus']);
     Route::apiResource('/users',UserController::class);
+    Route::apiResource('/analys',AnalysController::class);
+    Route::get('/total_user',[AnalysController::class,'totalUser']);
+    Route::get('/total_product',[AnalysController::class,'totalProduct']);
 
 });
 Route::middleware('auth:sanctum')->group(function(){
