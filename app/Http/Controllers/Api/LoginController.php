@@ -43,6 +43,7 @@ class LoginController extends Controller
                 'status_code' => 200,
                 'access_token' => $tokenResult,
                 'token_type' => 'Bearer',
+                'info' => $user
             ]);
         } catch (\Exception $error) {
             return response()->json([
