@@ -26,6 +26,7 @@ class ProductController extends Controller
         $material = $request->material_id;
         $min_price = $request->min_price;
         $max_price = $request->max_price;
+        $product_name = $request->productName;
 
         $product = Product::query();
 
@@ -39,6 +40,8 @@ class ProductController extends Controller
             })
             ->when(!empty($arrange_price), function ($q) use ($min_price, $max_price) {
                 return $q->whereBetween('price_new', [$min_price, $max_price]);
+            }) ->when(!empty($product_name), function ($q) use ($product_name) {
+                return $q->where('name', $product_name);
             })
             ->with('category', 'material', 'shape', 'imageProduct')->where('status',STATUS_ACTIVE)->get();
 
