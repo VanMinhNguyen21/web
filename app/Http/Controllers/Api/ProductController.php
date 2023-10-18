@@ -44,7 +44,39 @@ class ProductController extends Controller
             })->when(!empty($category), function ($q) use ($category) {
                 return $q->whereIn('shape_id', $category);
             })
-            ->with('category', 'material', 'shape', 'imageProduct')->where('status',STATUS_ACTIVE)->get();
+            ->with('category','supplier', 'material', 'shape', 'imageProduct')->where('status',STATUS_ACTIVE)->get();
+
+        return response()->json([
+            'data' => $response,
+        ], Response::HTTP_OK);
+    }
+
+    public function getProductForAdmin(Request $request)
+    {
+        //
+        $shape = $request->shape_id;
+
+        $material = $request->material_id;
+        $min_price = $request->min_price;
+        $max_price = $request->max_price;
+        $category = $request->category;
+
+        $product = Product::query();
+
+        $response = $product->when(!empty($shape), function ($q) use ($shape) {
+                $shape_id = explode(',', $shape);
+                return $q->whereIn('shape_id', $shape_id);
+            })
+            ->when(!empty($material), function ($q) use ($material) {
+                $material_id = explode(',', $material);
+                return $q->whereIn('shape_id', $material_id);
+            })
+            ->when(!empty($arrange_price), function ($q) use ($min_price, $max_price) {
+                return $q->whereBetween('price_new', [$min_price, $max_price]);
+            })->when(!empty($category), function ($q) use ($category) {
+                return $q->whereIn('shape_id', $category);
+            })
+            ->with('category','supplier', 'material', 'shape', 'imageProduct')->get();
 
         return response()->json([
             'data' => $response,
