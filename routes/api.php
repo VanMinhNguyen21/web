@@ -43,6 +43,7 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::get('/total_user',[AnalysController::class,'totalUser']);
     Route::get('/total_product',[AnalysController::class,'totalProduct']);
     Route::post('/change_password',[UserController::class,'changePassword']);
+    Route::get('product-admin',[ProductController::class, "getProductForAdmin"]);
 
 });
 Route::get('/product',[ProductController::class,'index']);
