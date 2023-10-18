@@ -43,7 +43,7 @@ class ProductController extends Controller
             }) ->when(!empty($product_name), function ($q) use ($product_name) {
                 return $q->where('name', $product_name);
             })
-            ->with('category', 'material', 'shape', 'imageProduct')->where('status',STATUS_ACTIVE)->get();
+            ->with('category','supplier', 'material', 'shape', 'imageProduct')->where('status',STATUS_ACTIVE)->get();
 
         return response()->json([
             'data' => $response,
