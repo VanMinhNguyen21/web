@@ -43,6 +43,26 @@ class  OrderController extends Controller
        
     }
 
+    public function getOrderByCode(Request $request)
+    {
+        //
+        if(!is_null($request->query('status'))){
+            $order = Order::with('order_detail',"order_detail.product")
+            ->where('status',$request->status)
+            ->where("order_code", "like", "%". $request->order_code. "%")
+            ->orderBy('id',"desc")->get();
+        }else{
+            $order = Order::with('order_detail',"order_detail.product")->get();
+        }
+
+        if($order){
+            return response()->json([
+                'status' => Response::HTTP_OK,
+                'data' => $order
+            ],Response::HTTP_OK);
+        }
+    }
+
     /**
      * Store a newly created resource in storage.
      *

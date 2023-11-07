@@ -52,6 +52,8 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::delete("/cancel_order/{id}", [OrderController::class, "destroy"]);
     Route::post('/update-product',[ProductController::class,"updateImageProduct"]);
 
+    Route::get('/order-by-ordercode', [OrderController::class, "getOrderByCode"]);
+
 });
 Route::get('/product',[ProductController::class,'index']);
 Route::get('/product-details/{id}',[ProductController::class,'show']);
