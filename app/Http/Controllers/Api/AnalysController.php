@@ -25,22 +25,52 @@ class AnalysController extends Controller
         $date_from = $request->date_from ?? now()->subDays(7);
         $date_to =$request->date_to ?? now();
 
+        $totalOrderByStatus = DB::table('order')
+            ->select(DB::raw('DATE(order.created_at) as order_date'), DB::raw('COUNT(order.id) as total_orders'),"order.status as status_order")
+            ->whereBetween('order.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+            ->groupBy('order_date',"order.status")
+            ->orderBy('order_date')
+            ->get();
+
+        $totalProductSell = DB::table('order_detail')
+            ->selectRaw('DATE(order_detail.created_at) as order_date, SUM(order_detail.quantity) as total_quantity_sell, order_detail.product_id as product_id, product.name')
+            ->leftJoin('product', 'order_detail.product_id', '=', 'product.id')
+            ->whereBetween('order_detail.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+            ->groupBy('order_date', 'product_id', 'product.name')
+            ->orderBy('order_date')
+            ->get();
+        
+
+        $totalSumMoney = DB::table('order')
+        ->select(DB::raw('DATE(order.created_at) as order_date'), DB::raw('SUM(order.total_price) as total_price'))
+        ->whereBetween('order.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+        ->where("order.status", Order::STATUS_SUCCESS)
+        ->groupBy('order_date')
+        ->orderBy('order_date')
+        ->get();
+
+
         $results = DB::table('order')
-        ->select(DB::raw('DATE(order.created_at) as order_date'), DB::raw('COUNT(order.id) as total_orders'),DB::raw('SUM(order.total_price) as total_price'),DB::raw('SUM(order_detail.quantity) as total_quantity'))
+        ->select(DB::raw('DATE(order.created_at) as order_date'), DB::raw('COUNT(order.id) as total_orders'),DB::raw('SUM(order.total_price) as total_price'),DB::raw('SUM(order_detail.quantity) as total_quantity'),"order.status as status_order")
         ->whereBetween('order.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
         ->leftJoin('order_detail', 'order.id', '=', 'order_detail.order_id')
-        ->groupBy('order_date')
+        ->groupBy('order_date',"order.status")
         ->orderBy('order_date')
         ->get();
 
         return response()->json([
             'status' => Response::HTTP_OK,
-            'data' => $results,
+            'data' => [
+                'total_order_by_status' => $totalOrderByStatus,
+                "total_product_sell" => $totalProductSell,
+                "total_sum_money" =>$totalSumMoney
+            ],
         ]);
     }
 
     public function totalUser() {
-        $totalUser = User::count();
+        $totalUser = DB::table('users')->select(DB::raw("COUNT(id) as total_user"),"role")
+                                ->groupBy('role')->get();
        
         return response()->json([
             'status' => Response::HTTP_OK,
@@ -49,7 +79,9 @@ class AnalysController extends Controller
     }
 
     public function totalProduct() {
-        $totalProduct = Product::count();
+        $totalProduct = DB::table('product')->select(DB::raw("COUNT(product.id) as total_product"),"category.name")
+                                ->leftJoin("category", "category.id", "=", "product.category_id")
+                                ->groupBy("category.name")->get();
        
         return response()->json([
             'status' => Response::HTTP_OK,

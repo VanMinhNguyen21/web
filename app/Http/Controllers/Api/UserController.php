@@ -22,11 +22,19 @@ class UserController extends Controller
     public function index(Request $request)
     {
         //
-        $users = User::get();
+        $name = $request->name;
+        $email = $request->email;
+        $users = User::query();
+
+        $response = $users->when(!empty($name), function ($q) use ($name) {
+                return $q->where('fullname', 'LIKE', "%{$name}%");
+        })->when(!empty($email), function ($q) use ($email) {
+            return $q->where('email', 'LIKE', "%{$email}%");
+        })->get();
 
         return response()->json([
             'status' => HttpResponse::HTTP_OK,
-            'data' => $users
+            'data' => $response
         ], HttpResponse::HTTP_OK);
     }
 
@@ -172,6 +180,60 @@ class UserController extends Controller
     {
         $user = User::findOrFail(auth()->user()->id);
         try {
+            if($user->role == ROLE_ADMIN && !empty($request->user_id)) {
+                $user_id = $request->user_id;
+    
+                $userUpdatePassword = User::findOrFail($user_id);
+                
+                if($userUpdatePassword) {
+                    $userUpdatePassword->update([
+                        "password" => Hash::make($request->password)
+                    ]);
+                }
+
+                return response()->json([
+                    'status' => HttpResponse::HTTP_OK,
+                    'message' => 'Update password successfull',
+                ], HttpResponse::HTTP_OK);
+            }else if(
+                !empty($request->user_id) && auth()->user()->id == $request->user_id
+            ) {
+                $user_id = $request->user_id;
+    
+                $userUpdatePassword = User::findOrFail($user_id);
+                
+                if($userUpdatePassword) {
+                    if (!Hash::check($request->password_old, $userUpdatePassword->password, [])) {
+                        return response()->json([
+                            'status_code' => 403,
+                            'message' => "password not correct"
+                        ]);
+                    }
+                    $userUpdatePassword->update([
+                        "password" => Hash::make($request->password)
+                    ]);
+                }
+
+                return response()->json([
+                    'status' => HttpResponse::HTTP_OK,
+                    'message' => 'Update password successfull',
+                ], HttpResponse::HTTP_OK);
+            }else if(
+                !empty($request->user_id) && $user->role != ROLE_ADMIN || 
+                !empty($request->user_id) && auth()->user()->id != $request->user_id 
+            ) {
+                return response()->json([
+                    'status' => HttpResponse::HTTP_FORBIDDEN,
+                    'message' => "You don't permission",
+                ], HttpResponse::HTTP_FORBIDDEN);
+            }
+
+            if (!Hash::check($request->password_old, $user->password, [])) {
+                return response()->json([
+                    'status_code' => 403,
+                    'message' => "password not correct"
+                ]);
+            }
             $password = Hash::make($request->password);
 
             $user->update([

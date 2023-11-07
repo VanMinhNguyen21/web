@@ -20,6 +20,9 @@ class CreateOrderTable extends Migration
             $table->string('address');
             $table->double('total_price');
             $table->integer('status');
+            $table->string("name");
+            $table->string("phone");
+            $table->string("note")->nullable();
             $table->timestamps();
         });
     }
