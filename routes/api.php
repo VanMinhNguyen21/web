@@ -47,12 +47,14 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::get('/total_user',[AnalysController::class,'totalUser']);
     Route::get('/total_product',[AnalysController::class,'totalProduct']);
     Route::post('/change_password',[UserController::class,'changePassword']);
-    Route::get('product-admin',[ProductController::class, "getProductForAdmin"]);
+    Route::get('products-admin',[ProductController::class, "getProductForAdmin"]);
     Route::post('update-image-product',[ProductController::class, "changeImageProduct"]);
     Route::delete("/cancel_order/{id}", [OrderController::class, "destroy"]);
     Route::post('/update-product',[ProductController::class,"updateImageProduct"]);
-
+    Route::apiResource("/slider",SliderController::class);
     Route::get('/order-by-ordercode', [OrderController::class, "getOrderByCode"]);
+    Route::post("/change-status-slider",[SliderController::class, "changeStatusSlider"]);
+    Route::get('/products-by-name',[ProductController::class,'getProductByName']);
 
 });
 Route::get('/product',[ProductController::class,'index']);
@@ -60,11 +62,13 @@ Route::get('/product-details/{id}',[ProductController::class,'show']);
 Route::apiResource('/tinh',XaphuongController::class);
 Route::post('/quan',[XaphuongController::class,'getQuanHuyen']);
 Route::post('/xa',[XaphuongController::class,'getXaPhuong']);
-Route::apiResource("/slider",SliderController::class);
+// Route::apiResource("/slider",SliderController::class);
 Route::apiResource('categories',CategoryController::class);
 Route::get('/product/10product',[ProductController::class,'get10Product']);
 Route::get('/product_has_price_new',[ProductController::class,'getProductHasPriceNew']);
-// Route::apiResource('/users-client',UserController::class);
+Route::get("/slider-active",[SliderController::class, "getSliderActive"]);
+Route::get('/categories-by-id-client/{id}',[CategoryController::class, "show"]);
+Route::get('/product-by-name',[ProductController::class,'getProductByNameClient']);
 
 Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');

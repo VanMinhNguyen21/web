@@ -416,5 +416,66 @@ class ProductController extends Controller
             'data' => $response,
         ], Response::HTTP_OK);
     }
+
+    public function getProductByName(Request $request) {
+        $productName = $request->productName;
+        $query = Product::query();
+        $products = $query->when(!empty($productName), function ($q) use ($productName) {
+            $q->where('name', 'LIKE', "%{$productName}%");
+        })->with('category', 'supplier', 'imageProduct', 'shape', 'material')->get();
+
+        $productResouce =  ProductResource::collection($products)->response()->getData();
+
+        return $productResouce;
+    }
+
+    public function getProductByNameClient(Request $request) {
+        // $category_id = $request->category_id;
+        // $productName = $request->productName;
+
+        // $products = Product::where('name', 'like', '%' . $productName . '%')
+        //     ->whereHas('category', function ($query) use ($category_id) {
+        //         $query->where('id', $category_id);
+        //     })
+        //     ->with('category', 'supplier', 'imageProduct', 'shape', 'material')->get();
+
+        // return response()->json(['data' => $products], 200);
+        {
+            //
+            $shape = $request->shape_id;
+            $productName = $request->productName;
+            $material = $request->material_id;
+            $min_price = $request->min_price;
+            $max_price = $request->max_price;
+            $category = $request->category;
+            $arrange_price = [];
+            if(!empty($min_price) && !empty($max_price)) {
+                $arrange_price = [$min_price,$max_price];
+    
+            }
+            $product = Product::query();
+    
+            $response = $product->when(!empty($shape), function ($q) use ($shape) {
+                return $q->where('shape_id', $shape);
+            })
+            ->when(!empty($material), function ($q) use ($material) {
+                return $q->where('material_id', $material);
+            })
+            ->when(!empty($arrange_price), function ($q) use ($arrange_price) {
+                if(!empty($q->price_new)) {
+                    return $q->whereBetween('price_new', $arrange_price);
+                }else{
+                    return $q->whereBetween('price_old', $arrange_price);
+                }
+            })->when(!empty($category), function ($q) use ($category) {
+                return $q->where('category_id', $category);
+            })->where('name', 'like', '%' . $productName . '%')
+            ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->orderBy('id',"desc")->get();
+    
+            return response()->json([
+                'data' => $response,
+            ], Response::HTTP_OK);
+        }
+    }
     
 }

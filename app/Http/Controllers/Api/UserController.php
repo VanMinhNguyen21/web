@@ -30,7 +30,7 @@ class UserController extends Controller
                 return $q->where('fullname', 'LIKE', "%{$name}%");
         })->when(!empty($email), function ($q) use ($email) {
             return $q->where('email', 'LIKE', "%{$email}%");
-        })->get();
+        })->orderBy("id","DESC")->get();
 
         return response()->json([
             'status' => HttpResponse::HTTP_OK,

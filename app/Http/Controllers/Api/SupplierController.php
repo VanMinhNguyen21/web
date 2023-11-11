@@ -27,7 +27,7 @@ class SupplierController extends Controller
         $query = Supplier::query();
         $categories = $query->when(!empty($supplierName), function ($q) use ($supplierName) {
             $q->where('name', 'LIKE', "%{$supplierName}%");
-        })->with('product')->where('deleted_at',null)->get();
+        })->with('product')->where('deleted_at',null)->orderBy("id","DESC")->get();
 
         $supplierResource =  SupplierResource::collection($categories)->response()->getData();
 

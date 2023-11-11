@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\Slider;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class SliderController extends Controller
 {
@@ -23,6 +24,31 @@ class SliderController extends Controller
             return $q->where("name", "like", "%". ${"name"}. "%");
         })->orderBy("id","DESC")->get(); 
 
+        return response()->json([
+            "status" => 200,
+            "data" => $result,
+        ]);
+    }
+
+
+    public function changeStatusSlider(Request $request) {
+        $slider = Slider::findOrFail($request->slider_id);
+
+        $slider->update([
+            'status' => $request->status,
+        ]);
+
+        return response()->json([
+            'status' => Response::HTTP_OK,
+            'message' => "Thay đổi trạng thái slider thành công",
+        ],Response::HTTP_OK);
+    }
+
+
+    public function getSliderActive()
+    {
+        //
+        $result = Slider::where('status', 2)->orderBy("id","DESC")->get();
         return response()->json([
             "status" => 200,
             "data" => $result,
@@ -49,6 +75,7 @@ class SliderController extends Controller
 
         $data = [
             "name" => $request->name,
+            "status" => $request->status,
             "image" => $imagePath,
         ];
 
