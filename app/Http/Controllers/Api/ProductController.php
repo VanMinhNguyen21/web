@@ -417,12 +417,48 @@ class ProductController extends Controller
         ], Response::HTTP_OK);
     }
 
+    public function get10Product(Request $request) {
+        $shape = $request->shape_id;
+
+        $material = $request->material_id;
+        $min_price = $request->min_price;
+        $max_price = $request->max_price;
+        $category = $request->category;
+        $arrange_price = [];
+        if(!empty($min_price) && !empty($max_price)) {
+            $arrange_price = [$min_price,$max_price];
+
+        }
+        $product = Product::query();
+
+        $response = $product->when(!empty($shape), function ($q) use ($shape) {
+            return $q->where('shape_id', $shape);
+        })
+        ->when(!empty($material), function ($q) use ($material) {
+            return $q->where('material_id', $material);
+        })
+        ->when(!empty($arrange_price), function ($q) use ($arrange_price) {
+            if(!empty($q->price_new)) {
+                return $q->whereBetween('price_new', $arrange_price);
+            }else{
+                return $q->whereBetween('price_old', $arrange_price);
+            }
+        })->when(!empty($category), function ($q) use ($category) {
+            return $q->where('category_id', $category);
+        })
+        ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->orderBy('id',"desc")->take(10)->get();
+
+        return response()->json([
+            'data' => $response,
+        ], Response::HTTP_OK);
+    }
+
     public function getProductByName(Request $request) {
         $productName = $request->productName;
         $query = Product::query();
         $products = $query->when(!empty($productName), function ($q) use ($productName) {
             $q->where('name', 'LIKE', "%{$productName}%");
-        })->with('category', 'supplier', 'imageProduct', 'shape', 'material')->get();
+        })->with('category', 'supplier', 'imageProduct', 'shape', 'material')->orderBy('id', 'desc')->get();
 
         $productResouce =  ProductResource::collection($products)->response()->getData();
 

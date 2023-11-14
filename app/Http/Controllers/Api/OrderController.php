@@ -29,9 +29,9 @@ class  OrderController extends Controller
     {
         //
         if(!is_null($request->query('status'))){
-            $order = Order::with('order_detail',"order_detail.product")->where('status',$request->status)->orderBy('id',"desc")->get();
+            $order = Order::with(['order_detail',"order_detail.product", 'user'])->where('status',$request->status)->orderBy('id',"desc")->get();
         }else{
-            $order = Order::with('order_detail',"order_detail.product")->get();
+            $order = Order::with(['order_detail',"order_detail.product", 'user'])->get();
         }
 
         if($order){

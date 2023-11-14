@@ -4,8 +4,10 @@ use App\Http\Controllers\Api\AnalysController;
 use App\Http\Controllers\Api\CartController;
 use App\Http\Controllers\Api\CategoryController;
 use App\Http\Controllers\Api\LoginController;
+use App\Http\Controllers\Api\MaterialController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\ShapeController;
 use App\Http\Controllers\Api\SliderController;
 use App\Http\Controllers\Api\SupplierController;
 use App\Http\Controllers\Api\UserController;
@@ -55,8 +57,10 @@ Route::middleware('auth:sanctum','checkRole')->prefix('admin')->group(function (
     Route::get('/order-by-ordercode', [OrderController::class, "getOrderByCode"]);
     Route::post("/change-status-slider",[SliderController::class, "changeStatusSlider"]);
     Route::get('/products-by-name',[ProductController::class,'getProductByName']);
-
+    Route::apiResource('/shapes', ShapeController::class);
+    Route::apiResource('/materials', MaterialController::class);
 });
+
 Route::get('/product',[ProductController::class,'index']);
 Route::get('/product-details/{id}',[ProductController::class,'show']);
 Route::apiResource('/tinh',XaphuongController::class);
@@ -64,11 +68,13 @@ Route::post('/quan',[XaphuongController::class,'getQuanHuyen']);
 Route::post('/xa',[XaphuongController::class,'getXaPhuong']);
 // Route::apiResource("/slider",SliderController::class);
 Route::apiResource('categories',CategoryController::class);
-Route::get('/product/10product',[ProductController::class,'get10Product']);
+Route::get('/product/10-product',[ProductController::class,'get10Product']);
 Route::get('/product_has_price_new',[ProductController::class,'getProductHasPriceNew']);
 Route::get("/slider-active",[SliderController::class, "getSliderActive"]);
 Route::get('/categories-by-id-client/{id}',[CategoryController::class, "show"]);
 Route::get('/product-by-name',[ProductController::class,'getProductByNameClient']);
+Route::get('/shape', [ShapeController::class, 'index']);
+Route::get('/material', [MaterialController::class, 'index']);
 
 Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
