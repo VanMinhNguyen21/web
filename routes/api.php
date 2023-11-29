@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\LoginController;
 use App\Http\Controllers\Api\OrderController;
 use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\SupplierController;
+use App\Http\Controllers\VnpayController;
 use App\Http\Middleware\CheckRoleUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -41,5 +42,6 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
+    Route::post('/vnpay', [VnpayController::class,'vnpay']);
 });
 
