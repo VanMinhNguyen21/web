@@ -25,7 +25,7 @@ class MaterialController extends Controller
 
         $result = $material->when(!empty($name), function ($q) use ($name) {
             return $q->where("name", "like", "%". ${"name"}. "%");
-        })->with('product')->orderBy("id","DESC")->get(); 
+        })->with('product')->where('deleted_at', null)->orderBy("id","DESC")->get(); 
 
         return response()->json([
             "status" => 200,
@@ -132,19 +132,19 @@ class MaterialController extends Controller
     public function destroy($id)
     {
         //
-        // $material = Masterial::findOrFail($id);
+        $material = Masterial::findOrFail($id);
 
-        // $material->update(['deleted_at'=>Carbon::now()]);
-
-        // return response()->json([
-        //     'message' => 'delete material successful',
-        // ],Response::HTTP_OK);
-
-        Masterial::findOrFail($id)->delete();
+        $material->update(['deleted_at'=>Carbon::now()]);
 
         return response()->json([
-            'status' => Response::HTTP_OK,
-            'message' => 'Delete material successfully!',
-        ]);
+            'message' => 'delete material successful',
+        ],Response::HTTP_OK);
+
+        // Masterial::findOrFail($id)->delete();
+
+        // return response()->json([
+        //     'status' => Response::HTTP_OK,
+        //     'message' => 'Delete material successfully!',
+        // ]);
     }
 }

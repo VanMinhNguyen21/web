@@ -24,7 +24,7 @@ class CategoryController extends Controller
         $query = Category::query();
         $categories = $query->when(!empty($categoryName), function ($q) use ($categoryName) {
             $q->where('name', 'LIKE', "%{$categoryName}%");
-        })->with('product')->orderBy("id","DESC")->get();
+        })->with('product')->get();
 
         $categoriesResource =  CategoryResource::collection($categories)->response()->getData();
 

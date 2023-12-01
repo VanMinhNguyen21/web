@@ -14,6 +14,7 @@ class Shape extends Model
     protected $fillable = [
         'name',
         'description',
+        'deleted_at'
     ];
 
     public function product() {

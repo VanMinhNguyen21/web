@@ -32527,6 +32527,4013 @@ Xaphuong::create([
     'maqh' => '399'
 ]);
 
+Xaphuong::create([
+    'xaid' => '15883',
+    'name' => 'Xã Hoằng Phú',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15886',
+    'name' => 'Xã Hoằng Quỳ',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15889',
+    'name' => 'Xã Hoằng Kim',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15892',
+    'name' => 'Xã Hoằng Trung',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15895',
+    'name' => 'Xã Hoằng Trinh',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15901',
+    'name' => 'Xã Hoằng Sơn',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15907',
+    'name' => 'Xã Hoằng Cát',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15910',
+    'name' => 'Xã Hoằng Xuyên',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15913',
+    'name' => 'Phường Tào Xuyên',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '15916',
+    'name' => 'Xã Hoằng Quý',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15919',
+    'name' => 'Xã Hoằng Hợp',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15922',
+    'name' => 'Phường Long Anh',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '15925',
+    'name' => 'Xã Hoằng Quang',
+    'type' => 'Xã',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '15928',
+    'name' => 'Xã Hoằng Đức',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15937',
+    'name' => 'Xã Hoằng Hà',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15940',
+    'name' => 'Xã Hoằng Đạt',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15946',
+    'name' => 'Xã Hoằng Đạo',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15949',
+    'name' => 'Xã Hoằng Thắng',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15952',
+    'name' => 'Xã Hoằng Đồng',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15955',
+    'name' => 'Xã Hoằng Thái',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15958',
+    'name' => 'Xã Hoằng Thịnh',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15961',
+    'name' => 'Xã Hoằng Thành',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15964',
+    'name' => 'Xã Hoằng Lộc',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15967',
+    'name' => 'Xã Hoằng Trạch',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15970',
+    'name' => 'Xã Hoằng Đại',
+    'type' => 'Xã',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '15973',
+    'name' => 'Xã Hoằng Phong',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15976',
+    'name' => 'Xã Hoằng Lưu',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15979',
+    'name' => 'Xã Hoằng Châu',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15982',
+    'name' => 'Xã Hoằng Tân',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15985',
+    'name' => 'Xã Hoằng Yến',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15988',
+    'name' => 'Xã Hoằng Tiến',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15991',
+    'name' => 'Xã Hoằng Hải',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15994',
+    'name' => 'Xã Hoằng Ngọc',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '15997',
+    'name' => 'Xã Hoằng Đông',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '16000',
+    'name' => 'Xã Hoằng Thanh',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '16003',
+    'name' => 'Xã Hoằng Phụ',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '16006',
+    'name' => 'Xã Hoằng Trường',
+    'type' => 'Xã',
+    'maqh' => '399'
+]);
+
+Xaphuong::create([
+    'xaid' => '16012',
+    'name' => 'Thị trấn Hậu Lộc',
+    'type' => 'Thị trấn',
+    'maqh' => '400'
+]);
+
+Xaphuong::create([
+    'xaid' => '16015',
+    'name' => 'Xã Đồng Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+
+Xaphuong::create([
+    'xaid' => '16018',
+    'name' => 'Xã Đại Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+
+Xaphuong::create([
+    'xaid' => '16021',
+    'name' => 'Xã Triệu Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16027',
+    'name' => 'Xã Tiến Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16030',
+    'name' => 'Xã Lộc Sơn',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16033',
+    'name' => 'Xã Cầu Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16036',
+    'name' => 'Xã Thành Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16039',
+    'name' => 'Xã Tuy Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16042',
+    'name' => 'Xã Phong Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16045',
+    'name' => 'Xã Mỹ Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16048',
+    'name' => 'Xã Thuần Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16057',
+    'name' => 'Xã Xuân Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16063',
+    'name' => 'Xã Hoa Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16066',
+    'name' => 'Xã Liên Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16069',
+    'name' => 'Xã Quang Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16072',
+    'name' => 'Xã Phú Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16075',
+    'name' => 'Xã Hòa Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16078',
+    'name' => 'Xã Minh Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16081',
+    'name' => 'Xã Hưng Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16084',
+    'name' => 'Xã Hải Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16087',
+    'name' => 'Xã Đa Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16090',
+    'name' => 'Xã Ngư Lộc',
+    'type' => 'Xã',
+    'maqh' => '400'
+]);
+Xaphuong::create([
+    'xaid' => '16093',
+    'name' => 'Thị trấn Nga Sơn',
+    'type' => 'Thị trấn',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16096',
+    'name' => 'Xã Ba Đình',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16099',
+    'name' => 'Xã Nga Vịnh',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16102',
+    'name' => 'Xã Nga Văn',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16105',
+    'name' => 'Xã Nga Thiện',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16108',
+    'name' => 'Xã Nga Tiến',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16114',
+    'name' => 'Xã Nga Phượng',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16117',
+    'name' => 'Xã Nga Trung',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16120',
+    'name' => 'Xã Nga Bạch',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16123',
+    'name' => 'Xã Nga Thanh',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16132',
+    'name' => 'Xã Nga Yên',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16135',
+    'name' => 'Xã Nga Giáp',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16138',
+    'name' => 'Xã Nga Hải',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16141',
+    'name' => 'Xã Nga Thành',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16144',
+    'name' => 'Xã Nga An',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16147',
+    'name' => 'Xã Nga Phú',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16150',
+    'name' => 'Xã Nga Điền',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16153',
+    'name' => 'Xã Nga Tân',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16156',
+    'name' => 'Xã Nga Thủy',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+Xaphuong::create([
+    'xaid' => '16159',
+    'name' => 'Xã Nga Liên',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+
+Xaphuong::create([
+    'xaid' => '16162',
+    'name' => 'Xã Nga Thái',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+
+Xaphuong::create([
+    'xaid' => '16165',
+    'name' => 'Xã Nga Thạch',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+
+Xaphuong::create([
+    'xaid' => '16168',
+    'name' => 'Xã Nga Thắng',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+
+Xaphuong::create([
+    'xaid' => '16171',
+    'name' => 'Xã Nga Trường',
+    'type' => 'Xã',
+    'maqh' => '401'
+]);
+
+Xaphuong::create([
+    'xaid' => '16174',
+    'name' => 'Thị trấn Yên Cát',
+    'type' => 'Thị trấn',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16177',
+    'name' => 'Xã Bãi Trành',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16180',
+    'name' => 'Xã Xuân Hòa',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16183',
+    'name' => 'Xã Xuân Bình',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16186',
+    'name' => 'Xã Hóa Quỳ',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16195',
+    'name' => 'Xã Cát Vân',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16198',
+    'name' => 'Xã Cát Tân',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16201',
+    'name' => 'Xã Tân Bình',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16204',
+    'name' => 'Xã Bình Lương',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16207',
+    'name' => 'Xã Thanh Quân',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16210',
+    'name' => 'Xã Thanh Xuân',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16213',
+    'name' => 'Xã Thanh Hòa',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16216',
+    'name' => 'Xã Thanh Phong',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16219',
+    'name' => 'Xã Thanh Lâm',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16222',
+    'name' => 'Xã Thanh Sơn',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16225',
+    'name' => 'Xã Thượng Ninh',
+    'type' => 'Xã',
+    'maqh' => '402'
+]);
+
+Xaphuong::create([
+    'xaid' => '16228',
+    'name' => 'Thị trấn Bến Sung',
+    'type' => 'Thị trấn',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16231',
+    'name' => 'Xã Cán Khê',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16234',
+    'name' => 'Xã Xuân Du',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16240',
+    'name' => 'Xã Phượng Nghi',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16243',
+    'name' => 'Xã Mậu Lâm',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16246',
+    'name' => 'Xã Xuân Khang',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16249',
+    'name' => 'Xã Phú Nhuận',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16252',
+    'name' => 'Xã Hải Long',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16258',
+    'name' => 'Xã Xuân Thái',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16261',
+    'name' => 'Xã Xuân Phúc',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16264',
+    'name' => 'Xã Yên Thọ',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16267',
+    'name' => 'Xã Yên Lạc',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16273',
+    'name' => 'Xã Thanh Tân',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16276',
+    'name' => 'Xã Thanh Kỳ',
+    'type' => 'Xã',
+    'maqh' => '403'
+]);
+
+Xaphuong::create([
+    'xaid' => '16279',
+    'name' => 'Thị trấn Nông Cống',
+    'type' => 'Thị trấn',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16282',
+    'name' => 'Xã Tân Phúc',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16285',
+    'name' => 'Xã Tân Thọ',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16288',
+    'name' => 'Xã Hoàng Sơn',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16291',
+    'name' => 'Xã Tân Khang',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16294',
+    'name' => 'Xã Hoàng Giang',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16297',
+    'name' => 'Xã Trung Chính',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16303',
+    'name' => 'Xã Trung Thành',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16309',
+    'name' => 'Xã Tế Thắng',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16315',
+    'name' => 'Xã Tế Lợi',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16318',
+    'name' => 'Xã Tế Nông',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16321',
+    'name' => 'Xã Minh Nghĩa',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16324',
+    'name' => 'Xã Minh Khôi',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16327',
+    'name' => 'Xã Vạn Hòa',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16330',
+    'name' => 'Xã Trường Trung',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16333',
+    'name' => 'Xã Vạn Thắng',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16336',
+    'name' => 'Xã Trường Giang',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16339',
+    'name' => 'Xã Vạn Thiện',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16342',
+    'name' => 'Xã Thăng Long',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16345',
+    'name' => 'Xã Trường Minh',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16348',
+    'name' => 'Xã Trường Sơn',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16351',
+    'name' => 'Xã Thăng Bình',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16354',
+    'name' => 'Xã Công Liêm',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16357',
+    'name' => 'Xã Tượng Văn',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16360',
+    'name' => 'Xã Thăng Thọ',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16363',
+    'name' => 'Xã Tượng Lĩnh',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16366',
+    'name' => 'Xã Tượng Sơn',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16369',
+    'name' => 'Xã Công Chính',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16375',
+    'name' => 'Xã Yên Mỹ',
+    'type' => 'Xã',
+    'maqh' => '404'
+]);
+
+Xaphuong::create([
+    'xaid' => '16378',
+    'name' => 'Thị trấn Rừng Thông',
+    'type' => 'Thị trấn',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16381',
+    'name' => 'Xã Đông Hoàng',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16384',
+    'name' => 'Xã Đông Ninh',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16390',
+    'name' => 'Xã Đông Hòa',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16393',
+    'name' => 'Xã Đông Yên',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16396',
+    'name' => 'Phường Đông Lĩnh',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '16399',
+    'name' => 'Xã Đông Minh',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16402',
+    'name' => 'Xã Đông Thanh',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16405',
+    'name' => 'Xã Đông Tiến',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16408',
+    'name' => 'Xã Đông Khê',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16414',
+    'name' => 'Xã Đông Thịnh',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16417',
+    'name' => 'Xã Đông Văn',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16420',
+    'name' => 'Xã Đông Phú',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16423',
+    'name' => 'Xã Đông Nam',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16426',
+    'name' => 'Xã Đông Quang',
+    'type' => 'Xã',
+    'maqh' => '405'
+]);
+
+Xaphuong::create([
+    'xaid' => '16429',
+    'name' => 'Xã Đông Vinh',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '16432',
+    'name' => 'Phường Đông Tân',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+
+Xaphuong::create([
+    'xaid' => '16435',
+    'name' => 'Phường An Hưng',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+Xaphuong::create([
+    'xaid' => '16438',
+    'name' => 'Thị trấn Tân Phong',
+    'type' => 'Thị trấn',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16441',
+    'name' => 'Phường Quảng Thịnh',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+Xaphuong::create([
+    'xaid' => '16447',
+    'name' => 'Xã Quảng Trạch',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16453',
+    'name' => 'Xã Quảng Đức',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16456',
+    'name' => 'Xã Quảng Định',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16459',
+    'name' => 'Phường Quảng Đông',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+Xaphuong::create([
+    'xaid' => '16462',
+    'name' => 'Xã Quảng Nhân',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16465',
+    'name' => 'Xã Quảng Ninh',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16468',
+    'name' => 'Xã Quảng Bình',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16471',
+    'name' => 'Xã Quảng Hợp',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16474',
+    'name' => 'Xã Quảng Văn',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16477',
+    'name' => 'Xã Quảng Long',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16480',
+    'name' => 'Xã Quảng Yên',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16483',
+    'name' => 'Xã Quảng Hòa',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16489',
+    'name' => 'Xã Quảng Khê',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16492',
+    'name' => 'Xã Quảng Trung',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16495',
+    'name' => 'Xã Quảng Chính',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16498',
+    'name' => 'Xã Quảng Ngọc',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16501',
+    'name' => 'Xã Quảng Trường',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16507',
+    'name' => 'Phường Quảng Cát',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+Xaphuong::create([
+    'xaid' => '16510',
+    'name' => 'Xã Quảng Phúc',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16513',
+    'name' => 'Xã Quảng Minh',
+    'type' => 'Xã',
+    'maqh' => '382'
+]);
+Xaphuong::create([
+    'xaid' => '16516',
+    'name' => 'Xã Quảng Hùng',
+    'type' => 'Xã',
+    'maqh' => '382'
+]);
+Xaphuong::create([
+    'xaid' => '16519',
+    'name' => 'Xã Quảng Giao',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16522',
+    'name' => 'Phường Quảng Phú',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+Xaphuong::create([
+    'xaid' => '16525',
+    'name' => 'Phường Quảng Tâm',
+    'type' => 'Phường',
+    'maqh' => '380'
+]);
+Xaphuong::create([
+    'xaid' => '16528',
+    'name' => 'Phường Quảng Thọ',
+    'type' => 'Phường',
+    'maqh' => '382'
+]);
+Xaphuong::create([
+    'xaid' => '16531',
+    'name' => 'Phường Quảng Châu',
+    'type' => 'Phường',
+    'maqh' => '382'
+]);
+Xaphuong::create([
+    'xaid' => '16534',
+    'name' => 'Phường Quảng Vinh',
+    'type' => 'Phường',
+    'maqh' => '382'
+]);
+Xaphuong::create([
+    'xaid' => '16537',
+    'name' => 'Xã Quảng Đại',
+    'type' => 'Xã',
+    'maqh' => '382'
+]);
+Xaphuong::create([
+    'xaid' => '16540',
+    'name' => 'Xã Quảng Hải',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16543',
+    'name' => 'Xã Quảng Lưu',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16546',
+    'name' => 'Xã Quảng Lộc',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16549',
+    'name' => 'Xã Tiên Trang',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16552',
+    'name' => 'Xã Quảng Nham',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16555',
+    'name' => 'Xã Quảng Thạch',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16558',
+    'name' => 'Xã Quảng Thái',
+    'type' => 'Xã',
+    'maqh' => '406'
+]);
+Xaphuong::create([
+    'xaid' => '16561',
+    'name' => 'Phường Hải Hòa',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+Xaphuong::create([
+    'xaid' => '16564',
+    'name' => 'Phường Hải Châu',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16567',
+    'name' => 'Xã Thanh Thủy',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16570',
+    'name' => 'Xã Thanh Sơn',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16576',
+    'name' => 'Phường Hải Ninh',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16579',
+    'name' => 'Xã Anh Sơn',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16582',
+    'name' => 'Xã Ngọc Lĩnh',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16585',
+    'name' => 'Phường Hải An',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16591',
+    'name' => 'Xã Các Sơn',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16594',
+    'name' => 'Phường Tân Dân',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16597',
+    'name' => 'Phường Hải Lĩnh',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16600',
+    'name' => 'Xã Định Hải',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16603',
+    'name' => 'Xã Phú Sơn',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16606',
+    'name' => 'Phường Ninh Hải',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16609',
+    'name' => 'Phường Nguyên Bình',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16612',
+    'name' => 'Xã Hải Nhân',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16618',
+    'name' => 'Phường Bình Minh',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16621',
+    'name' => 'Phường Hải Thanh',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16624',
+    'name' => 'Xã Phú Lâm',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16627',
+    'name' => 'Phường Xuân Lâm',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16630',
+    'name' => 'Phường Trúc Lâm',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16633',
+    'name' => 'Phường Hải Bình',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16636',
+    'name' => 'Xã Tân Trường',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16639',
+    'name' => 'Xã Tùng Lâm',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16642',
+    'name' => 'Phường Tĩnh Hải',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16645',
+    'name' => 'Phường Mai Lâm',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16648',
+    'name' => 'Xã Trường Lâm',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16651',
+    'name' => 'Xã Hải Yến',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16654',
+    'name' => 'Phường Hải Thượng',
+    'type' => 'Phường',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16657',
+    'name' => 'Xã Nghi Sơn',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16660',
+    'name' => 'Xã Hải Hà',
+    'type' => 'Xã',
+    'maqh' => '407'
+]);
+
+Xaphuong::create([
+    'xaid' => '16663',
+    'name' => 'Phường Đông Vĩnh',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16666',
+    'name' => 'Phường Hà Huy Tập',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16669',
+    'name' => 'Phường Lê Lợi',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16670',
+    'name' => 'Phường Quán Bàu',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16672',
+    'name' => 'Phường Hưng Bình',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16673',
+    'name' => 'Phường Hưng Phúc',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16675',
+    'name' => 'Phường Hưng Dũng',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16678',
+    'name' => 'Phường Cửa Nam',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16681',
+    'name' => 'Phường Quang Trung',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16684',
+    'name' => 'Phường Đội Cung',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16687',
+    'name' => 'Phường Lê Mao',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16690',
+    'name' => 'Phường Trường Thi',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16693',
+    'name' => 'Phường Bến Thủy',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16696',
+    'name' => 'Phường Hồng Sơn',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16699',
+    'name' => 'Phường Trung Đô',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16702',
+    'name' => 'Xã Nghi Phú',
+    'type' => 'Xã',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16705',
+    'name' => 'Xã Hưng Đông',
+    'type' => 'Xã',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16708',
+    'name' => 'Xã Hưng Lộc',
+    'type' => 'Xã',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16711',
+    'name' => 'Xã Hưng Hòa',
+    'type' => 'Xã',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16714',
+    'name' => 'Phường Vinh Tân',
+    'type' => 'Phường',
+    'maqh' => '412'
+]);
+
+Xaphuong::create([
+    'xaid' => '16717',
+    'name' => 'Phường Nghi Thuỷ',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16720',
+    'name' => 'Phường Nghi Tân',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16723',
+    'name' => 'Phường Thu Thuỷ',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16726',
+    'name' => 'Phường Nghi Hòa',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16729',
+    'name' => 'Phường Nghi Hải',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16732',
+    'name' => 'Phường Nghi Hương',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16735',
+    'name' => 'Phường Nghi Thu',
+    'type' => 'Phường',
+    'maqh' => '413'
+]);
+
+Xaphuong::create([
+    'xaid' => '16738',
+    'name' => 'Thị trấn Kim Sơn',
+    'type' => 'Thị trấn',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16741',
+    'name' => 'Xã Thông Thụ',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16744',
+    'name' => 'Xã Đồng Văn',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16747',
+    'name' => 'Xã Hạnh Dịch',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16750',
+    'name' => 'Xã Tiền Phong',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16753',
+    'name' => 'Xã Nậm Giải',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16756',
+    'name' => 'Xã Tri Lễ',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16759',
+    'name' => 'Xã Châu Kim',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16763',
+    'name' => 'Xã Mường Nọc',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16765',
+    'name' => 'Xã Châu Thôn',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16768',
+    'name' => 'Xã Nậm Nhoóng',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16771',
+    'name' => 'Xã Quang Phong',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16774',
+    'name' => 'Xã Căm Muộn',
+    'type' => 'Xã',
+    'maqh' => '415'
+]);
+
+Xaphuong::create([
+    'xaid' => '16777',
+    'name' => 'Thị trấn Tân Lạc',
+    'type' => 'Thị trấn',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16780',
+    'name' => 'Xã Châu Bính',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16783',
+    'name' => 'Xã Châu Thuận',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16786',
+    'name' => 'Xã Châu Hội',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16789',
+    'name' => 'Xã Châu Nga',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16792',
+    'name' => 'Xã Châu Tiến',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16795',
+    'name' => 'Xã Châu Hạnh',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16798',
+    'name' => 'Xã Châu Thắng',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16801',
+    'name' => 'Xã Châu Phong',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16804',
+    'name' => 'Xã Châu Bình',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16807',
+    'name' => 'Xã Châu Hoàn',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+
+Xaphuong::create([
+    'xaid' => '16810',
+    'name' => 'Xã Diên Lãm',
+    'type' => 'Xã',
+    'maqh' => '416'
+]);
+Xaphuong::create([
+    'xaid' => '16813',
+    'name' => 'Thị trấn Mường Xén',
+    'type' => 'Thị trấn',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16816',
+    'name' => 'Xã Mỹ Lý',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16819',
+    'name' => 'Xã Bắc Lý',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16822',
+    'name' => 'Xã Keng Đu',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16825',
+    'name' => 'Xã Đoọc Mạy',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16828',
+    'name' => 'Xã Huồi Tụ',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16831',
+    'name' => 'Xã Mường Lòng',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16834',
+    'name' => 'Xã Na Loi',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16837',
+    'name' => 'Xã Nậm Cắn',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16840',
+    'name' => 'Xã Bảo Nam',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16843',
+    'name' => 'Xã Phà Đánh',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16846',
+    'name' => 'Xã Bảo Thắng',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16849',
+    'name' => 'Xã Hữu Lập',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16852',
+    'name' => 'Xã Tà Cạ',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16855',
+    'name' => 'Xã Chiêu Lưu',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16858',
+    'name' => 'Xã Mường Típ',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16861',
+    'name' => 'Xã Hữu Kiệm',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16864',
+    'name' => 'Xã Tây Sơn',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16867',
+    'name' => 'Xã Mường Ải',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16870',
+    'name' => 'Xã Na Ngoi',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16873',
+    'name' => 'Xã Nậm Càn',
+    'type' => 'Xã',
+    'maqh' => '417'
+]);
+Xaphuong::create([
+    'xaid' => '16876',
+    'name' => 'Thị trấn Thạch Giám',
+    'type' => 'Thị trấn',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16879',
+    'name' => 'Xã Mai Sơn',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16882',
+    'name' => 'Xã Nhôn Mai',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16885',
+    'name' => 'Xã Hữu Khuông',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16900',
+    'name' => 'Xã Yên Tĩnh',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16903',
+    'name' => 'Xã Nga My',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16904',
+    'name' => 'Xã Xiêng My',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16906',
+    'name' => 'Xã Lưỡng Minh',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16909',
+    'name' => 'Xã Yên Hòa',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16912',
+    'name' => 'Xã Yên Na',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16915',
+    'name' => 'Xã Lưu Kiền',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16921',
+    'name' => 'Xã Xá Lượng',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16924',
+    'name' => 'Xã Tam Thái',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16927',
+    'name' => 'Xã Tam Đình',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16930',
+    'name' => 'Xã Yên Thắng',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16933',
+    'name' => 'Xã Tam Quang',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16936',
+    'name' => 'Xã Tam Hợp',
+    'type' => 'Xã',
+    'maqh' => '418'
+]);
+Xaphuong::create([
+    'xaid' => '16939',
+    'name' => 'Phường Hoà Hiếu',
+    'type' => 'Phường',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '16941',
+    'name' => 'Thị trấn Nghĩa Đàn',
+    'type' => 'Thị trấn',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16942',
+    'name' => 'Xã Nghĩa Mai',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16945',
+    'name' => 'Xã Nghĩa Yên',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16948',
+    'name' => 'Xã Nghĩa Lạc',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16951',
+    'name' => 'Xã Nghĩa Lâm',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16954',
+    'name' => 'Xã Nghĩa Sơn',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16957',
+    'name' => 'Xã Nghĩa Lợi',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16960',
+    'name' => 'Xã Nghĩa Bình',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16963',
+    'name' => 'Xã Nghĩa Thọ',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16966',
+    'name' => 'Xã Nghĩa Minh',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16969',
+    'name' => 'Xã Nghĩa Phú',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16972',
+    'name' => 'Xã Nghĩa Hưng',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16975',
+    'name' => 'Xã Nghĩa Hồng',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16978',
+    'name' => 'Xã Nghĩa Thịnh',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16981',
+    'name' => 'Xã Nghĩa Trung',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16984',
+    'name' => 'Xã Nghĩa Hội',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16987',
+    'name' => 'Xã Nghĩa Thành',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '16993',
+    'name' => 'Phường Quang Phong',
+    'type' => 'Phường',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '16994',
+    'name' => 'Phường Quang Tiến',
+    'type' => 'Phường',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '16996',
+    'name' => 'Xã Nghĩa Hiếu',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '17003',
+    'name' => 'Phường Long Sơn',
+    'type' => 'Phường',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '17005',
+    'name' => 'Xã Nghĩa Tiến',
+    'type' => 'Xã',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '17008',
+    'name' => 'Xã Nghĩa Mỹ',
+    'type' => 'Xã',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '17011',
+    'name' => 'Xã Tây Hiếu',
+    'type' => 'Xã',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '17014',
+    'name' => 'Xã Nghĩa Thuận',
+    'type' => 'Xã',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '17017',
+    'name' => 'Xã Đông Hiếu',
+    'type' => 'Xã',
+    'maqh' => '414'
+]);
+
+Xaphuong::create([
+    'xaid' => '17020',
+    'name' => 'Xã Nghĩa Đức',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '17023',
+    'name' => 'Xã Nghĩa An',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '17026',
+    'name' => 'Xã Nghĩa Long',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '17029',
+    'name' => 'Xã Nghĩa Lộc',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '17032',
+    'name' => 'Xã Nghĩa Khánh',
+    'type' => 'Xã',
+    'maqh' => '419'
+]);
+
+Xaphuong::create([
+    'xaid' => '17035',
+    'name' => 'Thị trấn Quỳ Hợp',
+    'type' => 'Thị trấn',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17038',
+    'name' => 'Xã Yên Hợp',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17041',
+    'name' => 'Xã Châu Tiến',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17044',
+    'name' => 'Xã Châu Hồng',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17047',
+    'name' => 'Xã Đồng Hợp',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17050',
+    'name' => 'Xã Châu Thành',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17053',
+    'name' => 'Xã Liên Hợp',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17056',
+    'name' => 'Xã Châu Lộc',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17059',
+    'name' => 'Xã Tam Hợp',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17062',
+    'name' => 'Xã Châu Cường',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17065',
+    'name' => 'Xã Châu Quang',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17068',
+    'name' => 'Xã Thọ Hợp',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17071',
+    'name' => 'Xã Minh Hợp',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17074',
+    'name' => 'Xã Nghĩa Xuân',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17077',
+    'name' => 'Xã Châu Thái',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17080',
+    'name' => 'Xã Châu Đình',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17083',
+    'name' => 'Xã Văn Lợi',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17086',
+    'name' => 'Xã Nam Sơn',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17089',
+    'name' => 'Xã Châu Lý',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17092',
+    'name' => 'Xã Hạ Sơn',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17095',
+    'name' => 'Xã Bắc Sơn',
+    'type' => 'Xã',
+    'maqh' => '420'
+]);
+
+Xaphuong::create([
+    'xaid' => '17098',
+    'name' => 'Thị trấn Cầu Giát',
+    'type' => 'Thị trấn',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17101',
+    'name' => 'Xã Quỳnh Thắng',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17104',
+    'name' => 'Xã Quỳnh Vinh',
+    'type' => 'Xã',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17107',
+    'name' => 'Xã Quỳnh Lộc',
+    'type' => 'Xã',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17110',
+    'name' => 'Phường Quỳnh Thiện',
+    'type' => 'Phường',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17113',
+    'name' => 'Xã Quỳnh Lập',
+    'type' => 'Xã',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17116',
+    'name' => 'Xã Quỳnh Trang',
+    'type' => 'Xã',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17119',
+    'name' => 'Xã Quỳnh Tân',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17122',
+    'name' => 'Xã Quỳnh Châu',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17125',
+    'name' => 'Phường Mai Hùng',
+    'type' => 'Phường',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17128',
+    'name' => 'Phường Quỳnh Dị',
+    'type' => 'Phường',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17131',
+    'name' => 'Phường Quỳnh Xuân',
+    'type' => 'Phường',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17134',
+    'name' => 'Phường Quỳnh Phương',
+    'type' => 'Phường',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17137',
+    'name' => 'Xã Quỳnh Liên',
+    'type' => 'Xã',
+    'maqh' => '432'
+]);
+
+Xaphuong::create([
+    'xaid' => '17140',
+    'name' => 'Xã Tân Sơn',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17143',
+    'name' => 'Xã Quỳnh Văn',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17146',
+    'name' => 'Xã Ngọc Sơn',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17149',
+    'name' => 'Xã Quỳnh Tam',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17152',
+    'name' => 'Xã Quỳnh Hoa',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17155',
+    'name' => 'Xã Quỳnh Thạch',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17158',
+    'name' => 'Xã Quỳnh Bảng',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17161',
+    'name' => 'Xã Quỳnh Mỹ',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17164',
+    'name' => 'Xã Quỳnh Thanh',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17167',
+    'name' => 'Xã Quỳnh Hậu',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17170',
+    'name' => 'Xã Quỳnh Lâm',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17173',
+    'name' => 'Xã Quỳnh Đôi',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17176',
+    'name' => 'Xã Quỳnh Lương',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17179',
+    'name' => 'Xã Quỳnh Hồng',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+
+Xaphuong::create([
+    'xaid' => '17182',
+    'name' => 'Xã Quỳnh Yên',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17185',
+    'name' => 'Xã Quỳnh Bá',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17188',
+    'name' => 'Xã Quỳnh Minh',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17191',
+    'name' => 'Xã Quỳnh Diễn',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17194',
+    'name' => 'Xã Quỳnh Hưng',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17197',
+    'name' => 'Xã Quỳnh Giang',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17200',
+    'name' => 'Xã Quỳnh Ngọc',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17203',
+    'name' => 'Xã Quỳnh Nghĩa',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17206',
+    'name' => 'Xã An Hòa',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17209',
+    'name' => 'Xã Tiến Thủy',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17212',
+    'name' => 'Xã Sơn Hải',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17215',
+    'name' => 'Xã Quỳnh Thọ',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17218',
+    'name' => 'Xã Quỳnh Thuận',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17221',
+    'name' => 'Xã Quỳnh Long',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17224',
+    'name' => 'Xã Tân Thắng',
+    'type' => 'Xã',
+    'maqh' => '421'
+]);
+Xaphuong::create([
+    'xaid' => '17227',
+    'name' => 'Thị trấn Con Cuông',
+    'type' => 'Thị trấn',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17230',
+    'name' => 'Xã Bình Chuẩn',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17233',
+    'name' => 'Xã Lạng Khê',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17236',
+    'name' => 'Xã Cam Lâm',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17239',
+    'name' => 'Xã Thạch Ngàn',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17242',
+    'name' => 'Xã Đôn Phục',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17245',
+    'name' => 'Xã Mậu Đức',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17248',
+    'name' => 'Xã Châu Khê',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17251',
+    'name' => 'Xã Chi Khê',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17254',
+    'name' => 'Xã Bồng Khê',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17257',
+    'name' => 'Xã Yên Khê',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17260',
+    'name' => 'Xã Lục Dạ',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17263',
+    'name' => 'Xã Môn Sơn',
+    'type' => 'Xã',
+    'maqh' => '422'
+]);
+Xaphuong::create([
+    'xaid' => '17266',
+    'name' => 'Thị trấn Tân Kỳ',
+    'type' => 'Thị trấn',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17269',
+    'name' => 'Xã Tân Hợp',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17272',
+    'name' => 'Xã Tân Phú',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17275',
+    'name' => 'Xã Tân Xuân',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17278',
+    'name' => 'Xã Giai Xuân',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17281',
+    'name' => 'Xã Nghĩa Bình',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17284',
+    'name' => 'Xã Nghĩa Đồng',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17287',
+    'name' => 'Xã Đồng Văn',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17290',
+    'name' => 'Xã Nghĩa Thái',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17293',
+    'name' => 'Xã Nghĩa Hợp',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17296',
+    'name' => 'Xã Nghĩa Hoàn',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+Xaphuong::create([
+    'xaid' => '17299',
+    'name' => 'Xã Nghĩa Phúc',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17302',
+    'name' => 'Xã Tiên Kỳ',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17305',
+    'name' => 'Xã Tân An',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17308',
+    'name' => 'Xã Nghĩa Dũng',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17311',
+    'name' => 'Xã Tân Long',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17314',
+    'name' => 'Xã Kỳ Sơn',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17317',
+    'name' => 'Xã Hương Sơn',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17320',
+    'name' => 'Xã Kỳ Tân',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17323',
+    'name' => 'Xã Phú Sơn',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17325',
+    'name' => 'Xã Tân Hương',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17326',
+    'name' => 'Xã Nghĩa Hành',
+    'type' => 'Xã',
+    'maqh' => '423'
+]);
+
+Xaphuong::create([
+    'xaid' => '17329',
+    'name' => 'Thị trấn Anh Sơn',
+    'type' => 'Thị trấn',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17332',
+    'name' => 'Xã Thọ Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17335',
+    'name' => 'Xã Thành Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17338',
+    'name' => 'Xã Bình Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17341',
+    'name' => 'Xã Tam Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17344',
+    'name' => 'Xã Đỉnh Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17347',
+    'name' => 'Xã Hùng Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17350',
+    'name' => 'Xã Cẩm Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17353',
+    'name' => 'Xã Đức Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17356',
+    'name' => 'Xã Tường Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17357',
+    'name' => 'Xã Hoa Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17359',
+    'name' => 'Xã Tào Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17362',
+    'name' => 'Xã Vĩnh Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17365',
+    'name' => 'Xã Lạng Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17368',
+    'name' => 'Xã Hội Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17371',
+    'name' => 'Xã Thạch Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17374',
+    'name' => 'Xã Phúc Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17377',
+    'name' => 'Xã Long Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17380',
+    'name' => 'Xã Khai Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17383',
+    'name' => 'Xã Lĩnh Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17386',
+    'name' => 'Xã Cao Sơn',
+    'type' => 'Xã',
+    'maqh' => '424'
+]);
+
+Xaphuong::create([
+    'xaid' => '17389',
+    'name' => 'Thị trấn Diễn Châu',
+    'type' => 'Thị trấn',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17392',
+    'name' => 'Xã Diễn Lâm',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17395',
+    'name' => 'Xã Diễn Đoài',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17398',
+    'name' => 'Xã Diễn Trường',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17401',
+    'name' => 'Xã Diễn Yên',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17404',
+    'name' => 'Xã Diễn Hoàng',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17407',
+    'name' => 'Xã Diễn Hùng',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17410',
+    'name' => 'Xã Diễn Mỹ',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17413',
+    'name' => 'Xã Diễn Hồng',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17416',
+    'name' => 'Xã Diễn Phong',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17419',
+    'name' => 'Xã Diễn Hải',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17422',
+    'name' => 'Xã Diễn Tháp',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17425',
+    'name' => 'Xã Diễn Liên',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17428',
+    'name' => 'Xã Diễn Vạn',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17431',
+    'name' => 'Xã Diễn Kim',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17434',
+    'name' => 'Xã Diễn Kỷ',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17437',
+    'name' => 'Xã Diễn Xuân',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17440',
+    'name' => 'Xã Diễn Thái',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17443',
+    'name' => 'Xã Diễn Đồng',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17446',
+    'name' => 'Xã Diễn Bích',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17449',
+    'name' => 'Xã Diễn Hạnh',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17452',
+    'name' => 'Xã Diễn Ngọc',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17455',
+    'name' => 'Xã Diễn Quảng',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17458',
+    'name' => 'Xã Diễn Nguyên',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17461',
+    'name' => 'Xã Diễn Hoa',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17464',
+    'name' => 'Xã Diễn Thành',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17467',
+    'name' => 'Xã Diễn Phúc',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17476',
+    'name' => 'Xã Diễn Cát',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17479',
+    'name' => 'Xã Diễn Thịnh',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17482',
+    'name' => 'Xã Diễn Tân',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17485',
+    'name' => 'Xã Minh Châu',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17488',
+    'name' => 'Xã Diễn Thọ',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17491',
+    'name' => 'Xã Diễn Lợi',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17494',
+    'name' => 'Xã Diễn Lộc',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17497',
+    'name' => 'Xã Diễn Trung',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17500',
+    'name' => 'Xã Diễn An',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17503',
+    'name' => 'Xã Diễn Phú',
+    'type' => 'Xã',
+    'maqh' => '425'
+]);
+
+Xaphuong::create([
+    'xaid' => '17506',
+    'name' => 'Thị trấn Yên Thành',
+    'type' => 'Thị trấn',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17509',
+    'name' => 'Xã Mã Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17510',
+    'name' => 'Xã Tiến Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17512',
+    'name' => 'Xã Lăng Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17515',
+    'name' => 'Xã Tân Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17518',
+    'name' => 'Xã Đức Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17521',
+    'name' => 'Xã Kim Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17524',
+    'name' => 'Xã Hậu Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17525',
+    'name' => 'Xã Hùng Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17527',
+    'name' => 'Xã Đô Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17530',
+    'name' => 'Xã Thọ Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17533',
+    'name' => 'Xã Quang Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+
+Xaphuong::create([
+    'xaid' => '17536',
+    'name' => 'Xã Tây Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17539',
+    'name' => 'Xã Phúc Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17542',
+    'name' => 'Xã Hồng Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17545',
+    'name' => 'Xã Đồng Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17548',
+    'name' => 'Xã Phú Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17551',
+    'name' => 'Xã Hoa Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17554',
+    'name' => 'Xã Tăng Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17557',
+    'name' => 'Xã Văn Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17560',
+    'name' => 'Xã Thịnh Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17563',
+    'name' => 'Xã Hợp Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17566',
+    'name' => 'Xã Xuân Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17569',
+    'name' => 'Xã Bắc Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17572',
+    'name' => 'Xã Nhân Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17575',
+    'name' => 'Xã Trung Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17578',
+    'name' => 'Xã Long Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17581',
+    'name' => 'Xã Minh Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17584',
+    'name' => 'Xã Nam Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17587',
+    'name' => 'Xã Vĩnh Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17590',
+    'name' => 'Xã Lý Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17593',
+    'name' => 'Xã Khánh Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17596',
+    'name' => 'Xã Viên Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17599',
+    'name' => 'Xã Đại Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17602',
+    'name' => 'Xã Liên Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17605',
+    'name' => 'Xã Bảo Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17608',
+    'name' => 'Xã Mỹ Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17611',
+    'name' => 'Xã Công Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17614',
+    'name' => 'Xã Sơn Thành',
+    'type' => 'Xã',
+    'maqh' => '426'
+]);
+Xaphuong::create([
+    'xaid' => '17617',
+    'name' => 'Thị trấn Đô Lương',
+    'type' => 'Thị trấn',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17619',
+    'name' => 'Xã Giang Sơn Đông',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17620',
+    'name' => 'Xã Giang Sơn Tây',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17623',
+    'name' => 'Xã Lam Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17626',
+    'name' => 'Xã Bồi Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17629',
+    'name' => 'Xã Hồng Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17632',
+    'name' => 'Xã Bài Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17635',
+    'name' => 'Xã Ngọc Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17638',
+    'name' => 'Xã Bắc Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17641',
+    'name' => 'Xã Tràng Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17644',
+    'name' => 'Xã Thượng Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17647',
+    'name' => 'Xã Hòa Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+Xaphuong::create([
+    'xaid' => '17650',
+    'name' => 'Xã Đặng Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17653',
+    'name' => 'Xã Đông Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17656',
+    'name' => 'Xã Nam Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17659',
+    'name' => 'Xã Lưu Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17662',
+    'name' => 'Xã Yên Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17665',
+    'name' => 'Xã Văn Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17668',
+    'name' => 'Xã Đà Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17671',
+    'name' => 'Xã Lạc Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17674',
+    'name' => 'Xã Tân Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17677',
+    'name' => 'Xã Thái Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17680',
+    'name' => 'Xã Quang Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17683',
+    'name' => 'Xã Thịnh Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17686',
+    'name' => 'Xã Trung Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17689',
+    'name' => 'Xã Xuân Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17692',
+    'name' => 'Xã Minh Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17695',
+    'name' => 'Xã Thuận Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17698',
+    'name' => 'Xã Nhân Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17701',
+    'name' => 'Xã Hiến Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17704',
+    'name' => 'Xã Mỹ Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17707',
+    'name' => 'Xã Trù Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17710',
+    'name' => 'Xã Đại Sơn',
+    'type' => 'Xã',
+    'maqh' => '427'
+]);
+
+Xaphuong::create([
+    'xaid' => '17713',
+    'name' => 'Thị trấn Thanh Chương',
+    'type' => 'Thị trấn',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17716',
+    'name' => 'Xã Cát Văn',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17719',
+    'name' => 'Xã Thanh Nho',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17722',
+    'name' => 'Xã Hạnh Lâm',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17723',
+    'name' => 'Xã Thanh Sơn',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17725',
+    'name' => 'Xã Thanh Hòa',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17728',
+    'name' => 'Xã Phong Thịnh',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17731',
+    'name' => 'Xã Thanh Phong',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17734',
+    'name' => 'Xã Thanh Mỹ',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17737',
+    'name' => 'Xã Thanh Tiên',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17743',
+    'name' => 'Xã Thanh Liên',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17749',
+    'name' => 'Xã Đại Đồng',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17752',
+    'name' => 'Xã Thanh Đồng',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17755',
+    'name' => 'Xã Thanh Ngọc',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17758',
+    'name' => 'Xã Thanh Hương',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17759',
+    'name' => 'Xã Ngọc Lâm',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17761',
+    'name' => 'Xã Thanh Lĩnh',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17764',
+    'name' => 'Xã Đồng Văn',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17767',
+    'name' => 'Xã Ngọc Sơn',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+Xaphuong::create([
+    'xaid' => '17770',
+    'name' => 'Xã Thanh Thịnh',
+    'type' => 'Xã',
+    'maqh' => '428'
+]);
+
+
+
 
     }
     

@@ -22,28 +22,29 @@ class AnalysController extends Controller
     {
         //
         // analys Order : total order and total price by day
-        $date_from = $request->date_from ?? now()->subDays(7);
+        // $date_from = $request->date_from ?? now()->subDays(7);
+        $date_from = $request->date_from ?? now()->startOfDay();
         $date_to =$request->date_to ?? now();
 
         $totalOrderByStatus = DB::table('order')
-            ->select(DB::raw('DATE(order.created_at) as order_date'), DB::raw('COUNT(order.id) as total_orders'),"order.status as status_order")
-            ->whereBetween('order.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+            ->select(DB::raw('DATE(order.updated_at) as order_date'), DB::raw('COUNT(order.id) as total_orders'),"order.status as status_order")
+            ->whereBetween('order.updated_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
             ->groupBy('order_date',"order.status")
             ->orderBy('order_date')
             ->get();
 
         $totalProductSell = DB::table('order_detail')
-            ->selectRaw('DATE(order_detail.created_at) as order_date, SUM(order_detail.quantity) as total_quantity_sell, order_detail.product_id as product_id, product.name')
+            ->selectRaw('DATE(order_detail.updated_at) as order_date, SUM(order_detail.quantity) as total_quantity_sell, order_detail.product_id as product_id, product.name')
             ->leftJoin('product', 'order_detail.product_id', '=', 'product.id')
-            ->whereBetween('order_detail.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+            ->whereBetween('order_detail.updated_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
             ->groupBy('order_date', 'product_id', 'product.name')
             ->orderBy('order_date')
             ->get();
         
 
         $totalSumMoney = DB::table('order')
-        ->select(DB::raw('DATE(order.created_at) as order_date'), DB::raw('SUM(order.total_price) as total_price'))
-        ->whereBetween('order.created_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+        ->select(DB::raw('DATE(order.updated_at) as order_date'), DB::raw('SUM(order.total_price) as total_price'))
+        ->whereBetween('order.updated_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
         ->where("order.status", Order::STATUS_SUCCESS)
         ->groupBy('order_date')
         ->orderBy('order_date')

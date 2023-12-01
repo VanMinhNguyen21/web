@@ -73,9 +73,70 @@ class  OrderController extends Controller
     {
         //
         // Đây là  function checkout luôn
-        try{
+    //     try{
 
-        $randomOrderCode = strtoupper(Str::random(8));
+    //     $randomOrderCode = 'ANNA-' . strtoupper(Str::random(8));
+    //     $tinh  = Tinhthanhpho::find($request->tinh);
+    //     $quan = QuanHuyen::find($request->quan);
+    //     $xa = XaPhuong::find($request->xa);
+    //     $district = $request->duong;
+        
+    //     $address = $district. " - " .  $xa->name . " - " . $quan->name . " - " . $tinh->name;
+    //     $status = 1;
+        
+    //     $carts = Cart::where('user_id',auth()->user()->id)->get();
+    //     $totalPrice = 0;
+    //     foreach ($carts as $cart) {
+    //         $product= Product::findOrFail($cart->product_id);
+    //         if($product->price_new == null) {
+    //             $totalPrice += $cart->quantity * $product->price_old;
+    //         }else{
+    //             $totalPrice += $cart->quantity * $product->price_new;
+    //         }
+    //     }
+
+    //     $order = Order::create([
+    //         'user_id' => auth()->user()->id,
+    //         'total_price' => $totalPrice,
+    //         'order_code' => $randomOrderCode,
+    //         'address' => $address,
+    //         'status' => 1,
+    //         'created_at' => Carbon::now(),
+    //         "name" => $request->name,
+    //         "phone" => $request->phone,
+    //         "note" => $request->note
+    //     ]);
+
+    //     foreach ($carts as $cart) {
+    //         $product= Product::findOrFail($cart->product_id);
+
+    //         OrderDetail::create([
+    //             'order_id' => $order->id,
+    //             'product_id' => $cart->product_id,
+    //             'price' => $product->price_new ? $product->price_new : $product->price_old,
+    //             'quantity' => $cart->quantity,
+    //         ]);
+
+    //         $product->update(['quantity' => $product->quantity - $cart->quantity]);
+
+    //         $cart->delete();
+    //     }
+
+    //     return response()->json([
+    //         'status' => Response::HTTP_OK,
+    //         'message' => 'Đặt hàng thành công. Mã đơn hàng ' . $randomOrderCode,
+    //     ],Response::HTTP_OK);
+
+    // }catch (\Exception $error) {
+    //     return response()->json([
+    //         'status_code' => 500,
+    //         'message' => 'Error in checkout',
+    //         'error' => $error,
+    //     ], Response::HTTP_INTERNAL_SERVER_ERROR);
+    // }
+
+    try {
+        $randomOrderCode = 'ANNA-' . strtoupper(Str::random(8));
         $tinh  = Tinhthanhpho::find($request->tinh);
         $quan = QuanHuyen::find($request->quan);
         $xa = XaPhuong::find($request->xa);
@@ -83,21 +144,25 @@ class  OrderController extends Controller
         
         $address = $district. " - " .  $xa->name . " - " . $quan->name . " - " . $tinh->name;
         $status = 1;
-        
-        $carts = Cart::where('user_id',auth()->user()->id)->get();
+        // Tính tổng giá trị đơn hàng
+        $carts = Cart::where('user_id', auth()->user()->id)->get();
         $totalPrice = 0;
+
         foreach ($carts as $cart) {
-            $product= Product::findOrFail($cart->product_id);
-            if($product->price_new == null) {
+            $product = Product::findOrFail($cart->product_id);
+            if ($product->price_new == null) {
                 $totalPrice += $cart->quantity * $product->price_old;
-            }else{
+            } else {
                 $totalPrice += $cart->quantity * $product->price_new;
             }
         }
 
+        $shippingFee = $totalPrice >= 2000000 ? 0 : 40000;
+
+        // Tạo đơn hàng
         $order = Order::create([
             'user_id' => auth()->user()->id,
-            'total_price' => $totalPrice,
+            'total_price' => $totalPrice + $shippingFee, // Tổng giá trị đơn hàng cộng phí vận chuyển
             'order_code' => $randomOrderCode,
             'address' => $address,
             'status' => 1,
@@ -107,8 +172,9 @@ class  OrderController extends Controller
             "note" => $request->note
         ]);
 
+        // Tạo chi tiết đơn hàng và cập nhật số lượng sản phẩm
         foreach ($carts as $cart) {
-            $product= Product::findOrFail($cart->product_id);
+            $product = Product::findOrFail($cart->product_id);
 
             OrderDetail::create([
                 'order_id' => $order->id,
@@ -118,22 +184,22 @@ class  OrderController extends Controller
             ]);
 
             $product->update(['quantity' => $product->quantity - $cart->quantity]);
-
             $cart->delete();
         }
 
+        // Trả về kết quả
         return response()->json([
             'status' => Response::HTTP_OK,
             'message' => 'Đặt hàng thành công. Mã đơn hàng ' . $randomOrderCode,
-        ],Response::HTTP_OK);
+        ], Response::HTTP_OK);
 
-    }catch (\Exception $error) {
-        return response()->json([
-            'status_code' => 500,
-            'message' => 'Error in checkout',
-            'error' => $error,
-        ], Response::HTTP_INTERNAL_SERVER_ERROR);
-    }
+    } catch (\Exception $error) {
+            return response()->json([
+                'status_code' => 500,
+                'message' => 'Error in checkout',
+                'error' => $error,
+            ], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
 
     }
 

@@ -18,6 +18,7 @@ class CreateMasterialTable extends Migration
             $table->string('name');
             $table->string('description')->nullable();
             $table->timestamps();
+            $table->dateTime('deleted_at')->nullable();
         });
     }
 

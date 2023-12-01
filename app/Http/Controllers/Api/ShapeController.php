@@ -25,7 +25,7 @@ class ShapeController extends Controller
 
         $result = $shape->when(!empty($name), function ($q) use ($name) {
             return $q->where("name", "like", "%". ${"name"}. "%");
-        })->with('product')->orderBy("id","DESC")->get(); 
+        })->with('product')->where('deleted_at', null)->orderBy("id","DESC")->get(); 
 
         return response()->json([
             "status" => 200,
@@ -132,18 +132,19 @@ class ShapeController extends Controller
     public function destroy($id)
     {
         //
-        // $shape = Shape::findOrFail($id);
+        $shape = Shape::findOrFail($id);
 
-        // $shape->update(['deleted_at'=>Carbon::now()]);
-
-        // return response()->json([
-        //     'message' => 'delete shape successful',
-        // ],Response::HTTP_OK);
-        Shape::findOrFail($id)->delete();
+        $shape->update(['deleted_at'=>Carbon::now()]);
 
         return response()->json([
-            'status' => Response::HTTP_OK,
-            'message' => 'Delete shape successfully!',
-        ]);
+            'message' => 'delete shape successful',
+        ],Response::HTTP_OK);
+
+        // Shape::findOrFail($id)->delete();
+
+        // return response()->json([
+        //     'status' => Response::HTTP_OK,
+        //     'message' => 'Delete shape successfully!',
+        // ]);
     }
 }

@@ -24,18 +24,18 @@ class UserSeeder extends Seeder
         ]);
 
         DB::table('users')->insert([
+            'fullname' => 'Staff',
+            'email' => 'staff@gmail.com',
+            'password' => Hash::make('123456'),
+            'role' => ROLE_STAFF
+        ]);
+
+        DB::table('users')->insert([
             'fullname' => 'User',
             'email' => 'user@gmail.com',
             'password' => Hash::make('123456'),
             'role' => ROLE_USER,
 
-        ]);
-
-        DB::table('users')->insert([
-            'fullname' => 'Staff',
-            'email' => 'staff@gmail.com',
-            'password' => Hash::make('123456'),
-            'role' => ROLE_STAFF
         ]);
 
     }

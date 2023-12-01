@@ -51,13 +51,12 @@ class CartController extends Controller
                 ],Response::HTTP_BAD_REQUEST);
             }
             // check ton tai trong gio hang
-            $product_isset = Cart::where('user_id',Auth::user()->id)->where('product_id',$request->product_id)->get();
-            if(count($product_isset)>0) {
-
-                $product_isset = Cart::where('user_id',Auth::user()->id)->where('product_id',$request->product_id)->first();
+            $product_isset = Cart::where('user_id',Auth::user()->id)->where('product_id',$request->product_id)->first();
+            if($product_isset) {
 
                 $product_isset->quantity = $product_isset->quantity +  $request->quantity;
-                if($product->quantity < ($product_isset->quantity +  $request->quantity)) {
+
+                if($product->quantity < ($product_isset->quantity)) {
                     return response()->json([
                         "status" => 400,
                         "message" => "số lượng phải nhỏ hơn số trong kho"
@@ -117,7 +116,7 @@ class CartController extends Controller
         $cart = Cart::findOrfail($id);
         $product = Product::find($cart->product_id);
 
-        if($cart->quantity + $request->quantity > $product->quantity ){
+        if($request->quantity > $product->quantity ){
             return response()->json([
                 'status' => Response::HTTP_BAD_REQUEST,
                 'message' => 'Tong san pham lon hon so luong trong kho!',

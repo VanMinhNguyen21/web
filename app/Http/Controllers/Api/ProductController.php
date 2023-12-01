@@ -51,6 +51,7 @@ class ProductController extends Controller
         })->when(!empty($category), function ($q) use ($category) {
             return $q->where('category_id', $category);
         })
+        ->where('status', 1)
         ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->orderBy('id',"desc")->get();
 
         return response()->json([
@@ -107,6 +108,15 @@ class ProductController extends Controller
         //
         try {
             $data = $request->all();
+
+            if($request->price_new > $request->price_old) {
+                return response()->json([
+                    'message' => "Giá mới phải nhỏ hơn giá cũ",
+                ], Response::HTTP_BAD_REQUEST);
+
+                // return response()->json(["status" => 502, "message" => "Giá mới phải nhỏ hơn giá cũ"], Response::HTTP_ACCEPTED);
+
+            }
 
             $pathThumbnail = $request->file('thumbnail')->store('public/product');
             $array = explode('/', $pathThumbnail);
@@ -184,8 +194,12 @@ class ProductController extends Controller
     public function update(Request $request, $id)
     {
         //
-        dd($request->all());
         $data = $request->all();
+        // if($request->price_new > $request->price_old) {
+        //     return response()->json([
+        //         'message' => "Giá mới phải nhỏ hơn giá cũ",
+        //     ], Response::HTTP_BAD_REQUEST);
+        // }
         $response = Product::with('category', 'shape', 'material', 'imageProduct')->findOrFail($id);
         // $responseResource =  new ProductResource($response);
         $imagePath = "";
@@ -198,7 +212,7 @@ class ProductController extends Controller
         }
 
         if($request->hasFile("image_product")) {
-            dd("a");
+
             $productImages = ProductImage::where("product_id",$id);
             foreach($productImages as $productImage)
             {
@@ -258,6 +272,11 @@ class ProductController extends Controller
     public function updateImageProduct (Request $request) {
         $data = $request->all();
         $id = $request->product_id;
+        if($request->price_new > $request->price_old) {
+            return response()->json([
+                'message' => "Giá mới phải nhỏ hơn giá cũ",
+            ], Response::HTTP_BAD_REQUEST);
+        }
         $response = Product::with('category', 'shape', 'material', 'imageProduct')->findOrFail($id);
         // $responseResource =  new ProductResource($response);
         $imagePath = "";
@@ -410,6 +429,7 @@ class ProductController extends Controller
         })->when(!empty($category), function ($q) use ($category) {
             return $q->where('category_id', $category);
         })
+        ->where('status', 1)
         ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->where('price_new', "!=", null)->orderBy('id',"desc")->get();
 
         return response()->json([
@@ -446,6 +466,7 @@ class ProductController extends Controller
         })->when(!empty($category), function ($q) use ($category) {
             return $q->where('category_id', $category);
         })
+        ->where('status', 1)
         ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->orderBy('id',"desc")->take(10)->get();
 
         return response()->json([
@@ -458,7 +479,10 @@ class ProductController extends Controller
         $query = Product::query();
         $products = $query->when(!empty($productName), function ($q) use ($productName) {
             $q->where('name', 'LIKE', "%{$productName}%");
-        })->with('category', 'supplier', 'imageProduct', 'shape', 'material')->orderBy('id', 'desc')->get();
+        })
+        ->where('status', 1)
+        ->with('category', 'supplier', 'imageProduct', 'shape', 'material')
+        ->orderBy('id', 'desc')->get();
 
         $productResouce =  ProductResource::collection($products)->response()->getData();
 
@@ -466,18 +490,9 @@ class ProductController extends Controller
     }
 
     public function getProductByNameClient(Request $request) {
-        // $category_id = $request->category_id;
-        // $productName = $request->productName;
 
-        // $products = Product::where('name', 'like', '%' . $productName . '%')
-        //     ->whereHas('category', function ($query) use ($category_id) {
-        //         $query->where('id', $category_id);
-        //     })
-        //     ->with('category', 'supplier', 'imageProduct', 'shape', 'material')->get();
-
-        // return response()->json(['data' => $products], 200);
-        {
-            //
+            $orderDirection = $request->orderBy === 'asc' ? 'asc' : 'desc';
+            
             $shape = $request->shape_id;
             $productName = $request->productName;
             $material = $request->material_id;
@@ -491,27 +506,84 @@ class ProductController extends Controller
             }
             $product = Product::query();
     
-            $response = $product->when(!empty($shape), function ($q) use ($shape) {
-                return $q->where('shape_id', $shape);
-            })
-            ->when(!empty($material), function ($q) use ($material) {
-                return $q->where('material_id', $material);
-            })
-            ->when(!empty($arrange_price), function ($q) use ($arrange_price) {
-                if(!empty($q->price_new)) {
-                    return $q->whereBetween('price_new', $arrange_price);
-                }else{
-                    return $q->whereBetween('price_old', $arrange_price);
-                }
-            })->when(!empty($category), function ($q) use ($category) {
-                return $q->where('category_id', $category);
-            })->where('name', 'like', '%' . $productName . '%')
-            ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->orderBy('id',"desc")->get();
+            // $response = $product->when(!empty($shape), function ($q) use ($shape) {
+            //     return $q->where('shape_id', $shape);
+            // })
+            // ->when(!empty($material), function ($q) use ($material) {
+            //     return $q->where('material_id', $material);
+            // })
+            // ->when(!empty($arrange_price), function ($q) use ($arrange_price) {
+            //     if(!empty($q->price_new)) {
+            //         return $q->whereBetween('price_new', $arrange_price);
+            //     }else{
+            //         return $q->whereBetween('price_old', $arrange_price);
+            //     }
+            // })->when(!empty($category), function ($q) use ($category) {
+            //     return $q->where('category_id', $category);
+            // })->where('name', 'like', '%' . $productName . '%')
+            // ->with('category', 'supplier', 'material', 'shape', 'imageProduct')
+            // // ->orderBy('id',"desc")
+            // ->orderByRaw('COALESCE(price_new, price_old) ' . $orderDirection)
+            // ->get();
     
-            return response()->json([
-                'data' => $response,
-            ], Response::HTTP_OK);
-        }
+            // return response()->json([
+            //     'data' => $response,
+            // ], Response::HTTP_OK);
+            
+            if ($request->filled('orderBy') && in_array($request->orderBy, ['asc', 'desc'])) {
+
+                $response = $product->when(!empty($shape), function ($q) use ($shape) {
+                return $q->where('shape_id', $shape);
+                })
+                ->when(!empty($material), function ($q) use ($material) {
+                    return $q->where('material_id', $material);
+                })
+                ->when(!empty($arrange_price), function ($q) use ($arrange_price) {
+                    if(!empty($q->price_new)) {
+                        return $q->whereBetween('price_new', $arrange_price);
+                    }else{
+                        return $q->whereBetween('price_old', $arrange_price);
+                    }
+                })->when(!empty($category), function ($q) use ($category) {
+                    return $q->where('category_id', $category);
+                })->where('name', 'like', '%' . $productName . '%')
+                ->where('status', 1)
+                ->with('category', 'supplier', 'material', 'shape', 'imageProduct')
+                // ->orderBy('id',"desc")
+                ->orderByRaw('COALESCE(price_new, price_old) ' . $orderDirection)
+                ->get();
+    
+                return response()->json([
+                    'data' => $response,
+                ], Response::HTTP_OK);
+
+            } else {
+                // Ngược lại, sắp xếp theo id giảm dần
+                $response = $product->when(!empty($shape), function ($q) use ($shape) {
+                    return $q->where('shape_id', $shape);
+                    })
+                    ->when(!empty($material), function ($q) use ($material) {
+                        return $q->where('material_id', $material);
+                    })
+                    ->when(!empty($arrange_price), function ($q) use ($arrange_price) {
+                        if(!empty($q->price_new)) {
+                            return $q->whereBetween('price_new', $arrange_price);
+                        }else{
+                            return $q->whereBetween('price_old', $arrange_price);
+                        }
+                    })->when(!empty($category), function ($q) use ($category) {
+                        return $q->where('category_id', $category);
+                    })->where('name', 'like', '%' . $productName . '%')
+                    ->where('status', 1)
+                    ->with('category', 'supplier', 'material', 'shape', 'imageProduct')
+                    ->orderBy('id',"desc")
+                    ->get();
+
+                    return response()->json([
+                        'data' => $response,
+                    ], Response::HTTP_OK);
+            }
+        
     }
     
 }
