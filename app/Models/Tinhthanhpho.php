@@ -5,18 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Shape extends Model
+class Tinhthanhpho extends Model
 {
     use HasFactory;
+    protected $table = 'tinh_thanhpho';
 
-    protected $table = 'shape';
-    
     protected $fillable = [
+        'matp',
         'name',
-        'description',
+        'type',
+        'slug'
     ];
-
-    public function product() {
-        return $this->hasMany(Product::class,'category_id', 'id');
-    }
 }

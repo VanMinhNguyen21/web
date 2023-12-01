@@ -35,15 +35,20 @@ class Product extends Model
     public function shape()
     {
         # code...
-        return $this->hasOne(Shape::class, 'id', 'category_id');
+        return $this->hasOne(Shape::class, 'id', 'shape_id');
     }
     public function material()
     {
         # code...
-        return $this->hasOne(Masterial::class, 'id', 'category_id');
+        return $this->hasOne(Masterial::class, 'id', 'material_id');
     }
     public function imageProduct()
     {
         return $this->hasMany(ProductImage::class, 'product_id', 'id');
+    }
+    public function supplier()
+    {
+        # code...
+        return $this->hasOne(Supplier::class, 'id', 'supplier_id');
     }
 }

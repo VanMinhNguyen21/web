@@ -22,6 +22,9 @@ class CreateOrderTable extends Migration
             $table->integer('status');
             $table->text('status_order')->nullable();
             $table->integer('staff_id')->nullable();
+            $table->string("name");
+            $table->string("phone");
+            $table->string("note")->nullable();
             $table->timestamps();
         });
     }

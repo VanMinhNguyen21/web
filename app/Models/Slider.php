@@ -5,18 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Shape extends Model
+class Slider extends Model
 {
     use HasFactory;
 
-    protected $table = 'shape';
-    
+    protected $table = "slider";
+
     protected $fillable = [
         'name',
-        'description',
+        'status',
+        'image'
     ];
-
-    public function product() {
-        return $this->hasMany(Product::class,'category_id', 'id');
-    }
 }

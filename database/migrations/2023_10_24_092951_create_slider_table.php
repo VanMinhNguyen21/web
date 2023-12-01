@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddCloumnDeleteToSupplierTable extends Migration
+class CreateSliderTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,12 @@ class AddCloumnDeleteToSupplierTable extends Migration
      */
     public function up()
     {
-        Schema::table('supplier', function (Blueprint $table) {
-            //
-            $table->dateTime('deleted_at')->nullable();
+        Schema::create('slider', function (Blueprint $table) {
+            $table->id();
+            $table->string('name');
+            $table->string('image');
+            $table->integer('status');
+            $table->timestamps();
         });
     }
 
@@ -26,8 +29,6 @@ class AddCloumnDeleteToSupplierTable extends Migration
      */
     public function down()
     {
-        Schema::table('supplier', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('slider');
     }
 }

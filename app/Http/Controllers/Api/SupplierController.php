@@ -27,7 +27,7 @@ class SupplierController extends Controller
         $query = Supplier::query();
         $categories = $query->when(!empty($supplierName), function ($q) use ($supplierName) {
             $q->where('name', 'LIKE', "%{$supplierName}%");
-        })->with('product')->where('deleted_at',null)->get();
+        })->with('product')->orderBy("id","DESC")->get();
 
         $supplierResource =  SupplierResource::collection($categories)->response()->getData();
 
@@ -137,12 +137,19 @@ class SupplierController extends Controller
     public function destroy($id)
     {
         //
-        $supplier = Supplier::findOrFail($id);
+        // $supplier = Supplier::findOrFail($id);
 
-        $supplier->update(['deleted_at'=>Carbon::now()]);
+        // $supplier->update(['deleted_at'=>Carbon::now()]);
+
+        // return response()->json([
+        //     'message' => 'delete supplier successful',
+        // ],Response::HTTP_OK);
+
+        Supplier::findOrFail($id)->delete();
 
         return response()->json([
-            'message' => 'delete supplier successful',
-        ],Response::HTTP_OK);
+            'status' => Response::HTTP_OK,
+            'message' => 'Delete suppplier successfully!',
+        ]);
     }
 }

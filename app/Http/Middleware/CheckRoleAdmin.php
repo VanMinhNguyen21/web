@@ -6,7 +6,7 @@ use App\Models\User;
 use Closure;
 use Illuminate\Http\Request;
 
-class CheckRoleUser
+class CheckRoleAdmin
 {
     /**
      * Handle an incoming request.
@@ -17,10 +17,10 @@ class CheckRoleUser
      */
     public function handle(Request $request, Closure $next)
     {
-        
+        return $next($request);
+
         if(
-            $request->user() && $request->user()->role == User::ADMIN ||
-            $request->user() && $request->user()->role == User::STAFF
+            $request->user() && $request->user()->role == User::ADMIN
         ) {
             return $next($request);
         }else{

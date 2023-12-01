@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Supplier;
 use App\Models\User;
+use App\Models\XaPhuong;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,6 +22,9 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             ShapeSeeder::class,
             MasterialSeeder::class,
+            TinhThanhPhoSeeder::class,
+            QuanHuyenSeeder::class,
+            XaPhuongSeeder::class,
         ]);
     }
 }

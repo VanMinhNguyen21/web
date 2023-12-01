@@ -21,7 +21,7 @@ class CartController extends Controller
     public function index()
     {
         //
-        $cart = Cart::where('user_id', Auth::user()->id)->get();
+        $cart = Cart::where('user_id', Auth::user()->id)->with("product")->get();
         $cartResponse= new CartResource($cart);
 
         return response()->json([
@@ -57,6 +57,12 @@ class CartController extends Controller
                 $product_isset = Cart::where('user_id',Auth::user()->id)->where('product_id',$request->product_id)->first();
 
                 $product_isset->quantity = $product_isset->quantity +  $request->quantity;
+                if($product->quantity < ($product_isset->quantity +  $request->quantity)) {
+                    return response()->json([
+                        "status" => 400,
+                        "message" => "số lượng phải nhỏ hơn số trong kho"
+                    ]);
+                }
                 $product_isset->save();
 
                 return response()->json([
@@ -109,7 +115,6 @@ class CartController extends Controller
     {
         //
         $cart = Cart::findOrfail($id);
-        dd($cart);
         $product = Product::find($cart->product_id);
 
         if($cart->quantity + $request->quantity > $product->quantity ){
@@ -118,7 +123,8 @@ class CartController extends Controller
                 'message' => 'Tong san pham lon hon so luong trong kho!',
             ],Response::HTTP_BAD_REQUEST);
         }
-        $cart->update(['quantity',$request->quantity]);
+        
+        $cart->update(['quantity'=>$request->quantity]);
 
         return response()->json([
             'status' => Response::HTTP_OK,

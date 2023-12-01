@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Order extends Model
 {
+    const STATUS_CANCEL = 5;
+    const STATUS_SUCCESS = 4;
     use HasFactory;
 
     protected $table = 'order';
@@ -18,10 +20,17 @@ class Order extends Model
         'status',
         'address',
         'status_order',
-        'staff_id'
+        'staff_id',
+        'name',
+        'phone',
+        'note',
     ];
 
     public function order_detail() {
         return $this->hasMany(OrderDetail::class,'order_id','id');
+    }
+
+    public function user() {
+        return $this->hasOne(User::class,'id', 'user_id');
     }
 }
