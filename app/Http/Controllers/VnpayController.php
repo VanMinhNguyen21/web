@@ -8,13 +8,14 @@ use Illuminate\Http\Request;
 class VnpayController extends Controller
 {
     //
-    public function vnpay(Request $request){
+    public function vnpay(Request $request)
+    {
         $vnp_Url = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-        $vnp_Returnurl = "http://127.0.0.1:8000/";
-        $vnp_TmnCode = "8J7QFHB3";//Mã website tại VNPAY 
-        $vnp_HashSecret = "NVNVISYPNYWZLRDZAZKSNZWAYMNAANGI"; //Chuỗi bí mật
-        
-        $vnp_TxnRef = $request->order_code; //Mã đơn hàng. Trong thực tế Merchant cần insert đơn hàng vào DB và gửi mã này sang VNPAY
+        $vnp_Returnurl = route('vnpay-callback');
+        $vnp_TmnCode = "8J7QFHB3"; 
+        $vnp_HashSecret = "NVNVISYPNYWZLRDZAZKSNZWAYMNAANGI"; 
+
+        $vnp_TxnRef = $request->order_code;
         $vnp_OrderInfo = "Thanh toan don hang";
         $vnp_OrderType = "billpayment";
 
@@ -37,14 +38,14 @@ class VnpayController extends Controller
             "vnp_ReturnUrl" => $vnp_Returnurl,
             "vnp_TxnRef" => $vnp_TxnRef,
         );
-        
+
         if (isset($vnp_BankCode) && $vnp_BankCode != "") {
             $inputData['vnp_BankCode'] = $vnp_BankCode;
         }
         if (isset($vnp_Bill_State) && $vnp_Bill_State != "") {
             $inputData['vnp_Bill_State'] = $vnp_Bill_State;
         }
-        
+
         //var_dump($inputData);
         ksort($inputData);
         $query = "";
@@ -59,28 +60,72 @@ class VnpayController extends Controller
             }
             $query .= urlencode($key) . "=" . urlencode($value) . '&';
         }
-        
+
         $vnp_Url = $vnp_Url . "?" . $query;
         if (isset($vnp_HashSecret)) {
-            $vnpSecureHash =   hash_hmac('sha512', $hashdata, $vnp_HashSecret);//  
+            $vnpSecureHash = hash_hmac('sha512', $hashdata, $vnp_HashSecret); //  
             $vnp_Url .= 'vnp_SecureHash=' . $vnpSecureHash;
         }
-        $returnData = array('code' => '00'
-            , 'message' => 'success'
-            , 'data' => $vnp_Url);
-            if (isset($_POST['redirect'])) {
-                $order = Order::where('order_code',$request->order_code)->first();
-                $order->update(['status_order'=> 'Thanh toan thanh cong 123']);
+        $returnData = array(
+            'code' => '00'
+            ,
+            'message' => 'success'
+            ,
+            'data' => $vnp_Url
+        );
+        if (isset($_POST['redirect'])) {
+            header('Location: ' . $vnp_Url);
+            die();
+        }
+    }
 
-                return response()->json([
-                    'status' => 200,
-                    'message'=> 'Thanh toan thanh cong'
-                ]);
-                // header('Location: ' . $vnp_Url);
-                // die();
-            } else {
-                echo json_encode($returnData);
-            }
-            // vui lòng tham khảo thêm tại code demo
+    public function callback(Request $request)
+    {
+        $vnp_Amount = $request->input('vnp_Amount');
+        $vnp_BankCode = $request->input('vnp_BankCode');
+        $vnp_BankTranNo = $request->input('vnp_BankTranNo');
+        $vnp_CardType = $request->input('vnp_CardType');
+        $vnp_OrderInfo = $request->input('vnp_OrderInfo');
+        $vnp_PayDate = $request->input('vnp_PayDate');
+        $vnp_ResponseCode = $request->input('vnp_ResponseCode');
+        $vnp_TmnCode = $request->input('vnp_TmnCode');
+        $vnp_TransactionNo = $request->input('vnp_TransactionNo');
+        $vnp_TransactionStatus = $request->input('vnp_TransactionStatus');
+        $vnp_TxnRef = $request->input('vnp_TxnRef');
+        $vnp_SecureHash = $request->input('vnp_SecureHash');
+
+        $order = Order::where('order_code', $vnp_TxnRef)->first();
+
+        switch ($vnp_TransactionStatus) {
+            case '00':
+               $dataUpdate = [
+                    'status_order' => "Thanh toan thanh cong",
+                ];
+                break;
+            case '24':
+                $dataUpdate = [
+                    'status_order' => "Khach hang huy thanh toan",
+                ] ;
+                break;
+            case '11':
+                $dataUpdate = [
+                    'status_order' => "Giao dịch không thành công do: Đã hết hạn chờ thanh toán. Xin quý khách vui lòng thực hiện lại giao dịch.n",
+                ];
+                break;
+            case '13':
+                $dataUpdate = [
+                    'status_order' => "Giao dịch không thành công do Quý khách nhập sai mật khẩu xác thực giao dịch (OTP). Xin quý khách vui lòng thực hiện lại giao dịch.",
+                ];
+                break;
+            default:
+                # code...
+                break;
+        }
+        $update = $order->update($dataUpdate);
+        
+        return response()->json([
+            'code' =>200,
+            "message" => $dataUpdate
+        ]);
     }
 }

@@ -16,7 +16,9 @@ class Order extends Model
         'user_id',
         'total_price',
         'status',
-        'address'
+        'address',
+        'status_order',
+        'staff_id'
     ];
 
     public function order_detail() {

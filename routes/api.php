@@ -42,6 +42,7 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
-    Route::post('/vnpay', [VnpayController::class,'vnpay']);
+    // Route::post('/vnpay/payment', [VnpayController::class,'vnpay'])->name('vnpay-payment');
+    // Route::get('/vnpay/callback', [VnpayController::class,'callback'])->name('vnpay-callback');
 });
 

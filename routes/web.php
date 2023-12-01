@@ -18,3 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::post('/vnpay',[VnpayController::class,'vnpay'])->name('vnpay');
+Route::get('/vnpay/callback', [VnpayController::class,'callback'])->name('vnpay-callback');
