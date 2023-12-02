@@ -263,6 +263,7 @@ class  OrderController extends Controller
 
         $order->update([
             'status' => $request->status,
+            'staff_id' => auth()->user()->id,
         ]);
 
         return response()->json([

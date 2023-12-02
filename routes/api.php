@@ -10,6 +10,7 @@ use App\Http\Controllers\Api\ProductController;
 use App\Http\Controllers\Api\ShapeController;
 use App\Http\Controllers\Api\SliderController;
 use App\Http\Controllers\Api\SupplierController;
+use App\Http\Controllers\VnpayController;
 use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\WishListController;
 use App\Http\Controllers\Api\XaphuongController;
@@ -80,6 +81,8 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
+    // Route::post('/vnpay/payment', [VnpayController::class,'vnpay'])->name('vnpay-payment');
+    // Route::get('/vnpay/callback', [VnpayController::class,'callback'])->name('vnpay-callback');
     Route::get('/profile/{id}',[UserController::class,'getProfile']);
     Route::post('/change_password',[UserController::class,'changePassword']);
     Route::post('/order', [OrderController::class, "store"]);
