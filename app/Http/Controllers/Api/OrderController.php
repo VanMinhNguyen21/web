@@ -47,12 +47,12 @@ class  OrderController extends Controller
     {
         //
         if(!is_null($request->query('status'))){
-            $order = Order::with('order_detail',"order_detail.product")
+            $order = Order::with('order_detail',"order_detail.product", "user")
             ->where('status',$request->status)
             ->where("order_code", "like", "%". $request->order_code. "%")
             ->orderBy('id',"desc")->get();
         }else{
-            $order = Order::with('order_detail',"order_detail.product")->get();
+            $order = Order::with('order_detail',"order_detail.product", 'user')->get();
         }
 
         if($order){
@@ -169,7 +169,8 @@ class  OrderController extends Controller
             'created_at' => Carbon::now(),
             "name" => $request->name,
             "phone" => $request->phone,
-            "note" => $request->note
+            "note" => $request->note,
+            "payment_method" => 1
         ]);
 
         // Tạo chi tiết đơn hàng và cập nhật số lượng sản phẩm
@@ -263,7 +264,7 @@ class  OrderController extends Controller
 
         $order->update([
             'status' => $request->status,
-            'staff_id' => auth()->user()->id,
+            // 'staff_id' => auth()->user()->id,
         ]);
 
         return response()->json([

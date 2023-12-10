@@ -124,6 +124,8 @@
 
                     <form method="POST" action="{{route('vnpay')}}">
                         @csrf
+                        <input type="hidden" name="order_code" value="01210299110">
+                        <input type="hidden" name="total_price" value="100000">
                         <button type="submit" name="redirect">Thanh toan VNPAY</button>
                     </form>
 

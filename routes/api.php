@@ -81,13 +81,15 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/change_status_order', [OrderController::class,'changeStatusOrder'])->name('user.change_status_order');
     Route::apiResource('/cart',CartController::class);
     Route::get('order_history',[OrderController::class,'orderHistory']);
-    // Route::post('/vnpay/payment', [VnpayController::class,'vnpay'])->name('vnpay-payment');
+    Route::post('/vnpay/payment', [VnpayController::class,'vnpay'])->name('vnpay-payment');
+    Route::post('/order-vnpay', [VnpayController::class, "orderVNPay"]);
     // Route::get('/vnpay/callback', [VnpayController::class,'callback'])->name('vnpay-callback');
+    Route::post('/momo/payment', [VnpayController::class,'momo'])->name('momo-payment');
+    Route::post('/order-momo', [VnpayController::class, "orderMomo"]);
     Route::get('/profile/{id}',[UserController::class,'getProfile']);
     Route::post('/change_password',[UserController::class,'changePassword']);
     Route::post('/order', [OrderController::class, "store"]);
     Route::delete("/cancel_order/{id}", [OrderController::class, "destroy"]);
     Route::apiResource('/wish_list',WishListController::class);
-
 });
 

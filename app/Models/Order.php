@@ -24,6 +24,7 @@ class Order extends Model
         'name',
         'phone',
         'note',
+        'payment_method'
     ];
 
     public function order_detail() {
