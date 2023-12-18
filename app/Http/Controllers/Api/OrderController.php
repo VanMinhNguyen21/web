@@ -273,11 +273,27 @@ class  OrderController extends Controller
         ],Response::HTTP_OK);
     }
 
-    public function orderHistory(){
+    public function orderHistory(Request $request){
         $orderHistory = Order::with('order_detail','order_detail.product')->where('user_id', auth()->user()->id)->orderBy('id',"desc")->get();
 
         return response()->json([
             'data' => $orderHistory,
         ],Response::HTTP_OK);
+
+        // $status = $request->query('status');
+
+        // $orderHistory = Order::with('order_detail', 'order_detail.product')
+        //     ->where('user_id', auth()->user()->id);
+
+        // if (!is_null($status)) {
+        //     $orderHistory->where('status', $status);
+        // }
+
+        // $orderHistory = $orderHistory->orderBy('id', 'desc')->get();
+
+        // return response()->json([
+        //     'data' => $orderHistory,
+        // ], Response::HTTP_OK);
+
     }
 }

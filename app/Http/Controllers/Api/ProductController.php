@@ -24,7 +24,6 @@ class ProductController extends Controller
     {
         //
         $shape = $request->shape_id;
-
         $material = $request->material_id;
         $min_price = $request->min_price;
         $max_price = $request->max_price;
@@ -52,7 +51,9 @@ class ProductController extends Controller
             return $q->where('category_id', $category);
         })
         ->where('status', 1)
-        ->with('category', 'supplier', 'material', 'shape', 'imageProduct')->orderBy('id',"desc")->get();
+        ->with('category', 'supplier', 'material', 'shape', 'imageProduct')
+        ->orderBy('id',"desc")
+        ->get();
 
         return response()->json([
             'data' => $response,

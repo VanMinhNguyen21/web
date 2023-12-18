@@ -22,8 +22,8 @@ class AnalysController extends Controller
     {
         //
         // analys Order : total order and total price by day
-        // $date_from = $request->date_from ?? now()->subDays(7);
-        $date_from = $request->date_from ?? now()->startOfDay();
+        $date_from = $request->date_from ?? now()->subDays(1);
+        // $date_from = $request->date_from ?? now()->startOfDay();
         $date_to =$request->date_to ?? now();
 
         $totalOrderByStatus = DB::table('order')
@@ -43,12 +43,13 @@ class AnalysController extends Controller
         
 
         $totalSumMoney = DB::table('order')
-        ->select(DB::raw('DATE(order.updated_at) as order_date'), DB::raw('SUM(order.total_price) as total_price'))
-        ->whereBetween('order.updated_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
-        ->where("order.status", Order::STATUS_SUCCESS)
-        ->groupBy('order_date')
-        ->orderBy('order_date')
-        ->get();
+            ->select(DB::raw('DATE(order.updated_at) as order_date'), DB::raw('SUM(order.total_price) as total_price'))
+            ->whereBetween('order.updated_at', [$date_from . ' 00:00:00', $date_to . ' 23:59:59'])
+            // ->where("order.status", Order::STATUS_SUCCESS)
+            ->whereNotIn("order.status", [Order::STATUS_CANCEL])
+            ->groupBy('order_date')
+            ->orderBy('order_date')
+            ->get();
 
 
         $results = DB::table('order')
