@@ -128,6 +128,7 @@
                         <input type="hidden" name="total_price" value="100000">
                         <button type="submit" name="redirect">Thanh toan VNPAY</button>
                     </form>
+                    <img src="https://127.0.0.1:8000/storage/product/808nGhCbtT3KQeQLGtXs7fmy6jcw76JIlRH7Mxfp.png" />
 
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
                         Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
